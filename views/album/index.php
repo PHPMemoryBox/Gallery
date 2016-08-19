@@ -1,9 +1,7 @@
-<?php $this->title = 'MemoryBox Gallery';
+<?php
+$this->title = 'Albums'; ?>
 
-?>
-
-
-<!-- Show albums when user is logged in -->
+<!-- show albums  -->
 
 <h1><?=htmlspecialchars($this->title)?></h1>
 
@@ -35,7 +33,7 @@
 
                 </li>
 
-             <?php endforeach ?>
-         </ul>
+            <?php endforeach ?>
+        </ul>
     </article>
 </main>
