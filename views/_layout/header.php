@@ -14,8 +14,8 @@
     <a href="<?=APP_ROOT?>"><img src="<?=APP_ROOT?>/content/images/site-logo.png"></a>
     <a href="<?=APP_ROOT?>/">Home</a>
     <?php if ($this->isLoggedIn) : ?>
-        <a href="<?=APP_ROOT?>/posts">Albums</a>
-        <a href="<?=APP_ROOT?>/posts/create">Create Post</a>
+        <a href="<?=APP_ROOT?>/album">Albums</a>
+        <a href="<?=APP_ROOT?>/album/create">Create Album</a>
         <a href="<?=APP_ROOT?>/users">Users</a>
     <?php else: ?>
         <a href="<?=APP_ROOT?>/users/login">Login</a>
@@ -23,7 +23,7 @@
     <?php endif; ?>
     <?php if ($this->isLoggedIn) : ?>
         <div id="logged-in-info">
-            <span>Hello, <b><?=htmlspecialchars($_SESSION['username'])?></b></span>
+            <span>Hello, <b><?=htmlspecialchars($_SESSION['name'])?></b></span>
             <form method="post" action="<?=APP_ROOT?>/users/logout">
                 <input type="submit" value="Logout"/>
             </form>

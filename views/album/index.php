@@ -20,9 +20,9 @@ $this->title = 'Albums'; ?>
                 }
                 ?>
                 <li>
-                    <h2 class="album_name"> <?=htmlspecialchars($album['name']) ?> </h2>
-
                     <a href='<?=APP_ROOT?>/album/view/<?=$album['album_id']?>'> <img src='<?=$thumbnails_file?>'/></a>
+
+                    <h2 class="album_name"> <?=htmlspecialchars($album['name']) ?> </h2>
 
                     <div class="date">
 
@@ -35,5 +35,7 @@ $this->title = 'Albums'; ?>
 
             <?php endforeach ?>
         </ul>
+
+        <a href="<?=APP_ROOT?>/album/create"> Create new album</a>
     </article>
 </main>

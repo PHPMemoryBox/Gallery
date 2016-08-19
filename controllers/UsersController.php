@@ -17,16 +17,14 @@ class UsersController extends BaseController
             } else if (strlen($email) < 2 || !strpos($email, '@')){
                 $this->addErrorMessage("Invalid email!");
             } else if (strlen($password) < 2 || strlen($password) > 50){
-                $this->addErrorMessage("Invalid password!");
+                $this->addErrorMessage("Invalid password lenght!");
             } else if (strlen($name) > 200) {
                 $this->addErrorMessage("Invalid name length!");
             } else if ( $_POST['password'] != $_POST['confirm_password']) {
                 $this->addErrorMessage("Password does not match.");
             } else if ($this->model->checkIfEmailExist($email)) {
                 $this->addErrorMessage("Email already used.");
-            }
-
-            else if ($this->formValid()) {
+            } else if ($this->formValid()) {
                 $userId = $this->model->register($_POST['email'], $_POST['password'], $_POST['name'], $_POST['city']);
                 if ($userId) {
                     $_SESSION['email'] = $email;
