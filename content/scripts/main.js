@@ -1,15 +1,41 @@
-$(function() {
 
-    function imageDelete(id) {
-        var xhttp = new XMLHttpRequest();
-        xhttp.onreadystatechange = function() {
-            if (xhttp.readyState == 4 && xhttp.status == 200) {
-                var item = document.getElementById("photo" + id);
-                item.parentNode.removeChild( item );
+
+
+function deleteMultiple(photoid) {
+    if (confirm("Are you sure you want to delete all selected photos?")) {
+
+        var data = {};
+        data["albumid"] = $("#album-photos").attr("data-albumid");
+
+        var ids = [];
+
+        if (photoid == undefined) {
+            $(".delete_checkbox").each(function () {
+                if ($(this).is(":checked")) {
+                    ids.push($(this).attr("data-photoid"));
+                }
+
+            });
+        } else {
+            ids.push(photoid);
+        }
+        data["photoid"] = ids;
+
+        $.ajax({
+            type: "POST",
+            url: "/gallery/album/deletePhotoMultiple",
+            data: data,
+            dataType: "json",
+            success: function (data) {
+
+                for (var key in data){
+                    $("#photo" + data[key]).remove();
+                }
+
+            },
+            error: function (data) {
+                console.log(data);
             }
-        };
-        xhttp.open("GET", "delete.php?photo_id=" + id + "&album_id=", true);
-        xhttp.send();
+        });
     }
-
-})
+}

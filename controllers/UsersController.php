@@ -71,7 +71,10 @@ class UsersController extends BaseController
 
         $_SESSION['messages'] = $message; */
 
-        if ($this->isPost && (isset($_POST['email']) && isset($_POST['password']))) {
+        if ($this->isPost
+            && (isset($_POST['email']) && isset($_POST['password']))
+            && ($_POST['email'] && $_POST['password'])
+        ) {
             $email = $_POST['email'];
             $password = $_POST['password'];
             $loggedUserId = $this->model->login($email, $password);
@@ -85,7 +88,10 @@ class UsersController extends BaseController
             else {
                 $this->addErrorMessage("Error: login failed!");
             }
+        } else {
+            $this->addErrorMessage("Error: enter email and password!");
         }
+
     }
 
     public function logout()

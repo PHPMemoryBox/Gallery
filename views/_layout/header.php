@@ -11,24 +11,27 @@
 
 <body>
 <header>
-    <a href="<?=APP_ROOT?>"><img src="<?=APP_ROOT?>/content/images/site-logo.png"></a>
-    <a href="<?=APP_ROOT?>/">Home</a>
-    <?php if ($this->isLoggedIn) : ?>
-        <a href="<?=APP_ROOT?>/album">Albums</a>
-        <a href="<?=APP_ROOT?>/album/create">Create Album</a>
-        <a href="<?=APP_ROOT?>/users">Users</a>
-    <?php else: ?>
-        <a href="<?=APP_ROOT?>/users/login">Login</a>
-        <a href="<?=APP_ROOT?>/users/register">Register</a>
-    <?php endif; ?>
-    <?php if ($this->isLoggedIn) : ?>
-        <div id="logged-in-info">
-            <span>Hello, <b><?=htmlspecialchars($_SESSION['name'])?></b></span>
-            <form method="post" action="<?=APP_ROOT?>/users/logout">
-                <input type="submit" value="Logout"/>
-            </form>
-        </div>
-    <?php endif; ?>
+    <ul>
+        <li><a href="<?=APP_ROOT?>"><img src="<?=APP_ROOT?>/content/images/site-logo.png"></a></li>
+        <li><a href="<?=APP_ROOT?>/">Home</a></li>
+        <?php if ($this->isLoggedIn) : ?>
+        <li><a href="<?=APP_ROOT?>/album">Albums</a></li>
+        <li><a href="<?=APP_ROOT?>/album/create">Create Album</a></li>
+        <li> <a href="<?=APP_ROOT?>/users">Users</a></li>
+        <?php else: ?>
+        <li> <a href="<?=APP_ROOT?>/users/login">Login</a></li>
+        <li> <a href="<?=APP_ROOT?>/users/register">Register</a></li>
+        <?php endif; ?>
+        <?php if ($this->isLoggedIn) : ?>
+        <li class="right">  <div id="logged-in-info">
+             <span>Hello, <b><?=htmlspecialchars($_SESSION['name'])?></b></span>
+                <form method="post" action="<?=APP_ROOT?>/users/logout">
+                    <input type="submit" value="Logout"/>
+                </form>
+            </div>
+        </li>
+        <?php endif; ?>
+    </ul>
 </header>
 
 <?php require_once('show-notify-messages.php'); ?>

@@ -1,3 +1,113 @@
+/* -------------------------------------------------------------------------- */
+/* -----| GENERAL |---------------------------------------------------------- */
+/* -------------------------------------------------------------------------- */
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    -webkit-user-select:none;
+    -moz-user-select:none;
+    -ms-user-select:none;
+}
+
+html {
+    background-color: #939393;
+    font-size: 100%;
+}
+
+body {
+    background-color: #939393;
+    color: #000000;
+    font-family: Arial, Helvetica, sans-serif, Verdana;
+    font-size: 1em;
+    padding: 60px 100px;
+}
+
+ul li {
+    list-style: none;
+    display: inline-block;
+    padding: 5px;
+}
+
+img.thumbnail {
+    width: 7em ;
+    height: 7em;
+}
+
+body>main:after {
+    content: '';
+    display: block;
+    clear: both;
+}
+
+/* -------------------------------------------------------------------------- */
+/* -----| HEADER, FOOTER |--------------------------------------------------- */
+/* -------------------------------------------------------------------------- */
+
+body {margin: 0;}
+
+header ul, footer {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    overflow: hidden;
+    background-color: #333;
+    border-radius: 15px;
+}
+
+header ul li {
+    float: left;
+}
+
+header ul li a, footer {
+    display: block;
+    color: white;
+    text-align: center;
+    padding: 14px 16px;
+    text-decoration: none;
+}
+
+header ul li a:hover:not(.active) {background-color: #111;}
+
+header ul li a:active {background-color: #4CAF50;}
+
+header ul li.right {
+    float: right;
+    color: white;
+}
+
+@media screen and (max-width: 600px){
+    header ul li.right,
+    header ul li {float: none;}
+}
+
+
+
+/* -------------------------------------------------------------------------- */
+/* -----| PHOTOS |---------------------------------------------------------- */
+/* -------------------------------------------------------------------------- */
+
+
+
+
+
+/* -------------------------------------------------------------------------- */
+/* -----| LOGIN FORM |------------------------------------------------------- */
+/* -------------------------------------------------------------------------- */
+
+
+
+
+
+
+
+/* -------------------------------------------------------------------------- */
+/* -----| DEFAULT |---------------------------------------------------------- */
+/* -------------------------------------------------------------------------- */
+
+
+/*
 body>header {
     background: #eee;
     padding: 5px;
@@ -17,10 +127,6 @@ body>footer {
     text-align: center;
 }
 
-table th, table td {
-    background: #DDD;
-    padding: 5px;
-}
 
 ul#messages li {
     display: block;
@@ -74,8 +180,7 @@ body>aside a {
     text-decoration: none;
 }
 
-body>main:after {
-    content: '';
-    display: block;
-    clear: both;
-}
+
+
+*/
+
