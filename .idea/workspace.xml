@@ -29,51 +29,41 @@
   </component>
   <component name="FileEditorManager">
     <leaf>
-      <file leaf-file-name="main.js" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/content/scripts/main.js">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="660">
-              <caret line="30" column="38" selection-start-line="30" selection-start-column="38" selection-end-line="30" selection-end-column="38" />
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
       <file leaf-file-name="index.php" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/views/album/index.php">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="462">
-              <caret line="21" column="63" selection-start-line="21" selection-start-column="63" selection-end-line="21" selection-end-column="63" />
+            <state relative-caret-position="638">
+              <caret line="53" column="0" selection-start-line="53" selection-start-column="0" selection-end-line="53" selection-end-column="0" />
               <folding />
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="view.php" pinned="false" current-in-tab="true">
+      <file leaf-file-name="view.php" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/views/album/view.php">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="374">
-              <caret line="29" column="54" selection-start-line="29" selection-start-column="54" selection-end-line="29" selection-end-column="54" />
+            <state relative-caret-position="445">
+              <caret line="40" column="16" selection-start-line="40" selection-start-column="16" selection-end-line="40" selection-end-column="132" />
               <folding />
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="show-notify-messages.php" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/views/_layout/show-notify-messages.php">
+      <file leaf-file-name="login.php" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/views/users/login.php">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="0">
-              <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+            <state relative-caret-position="220">
+              <caret line="10" column="30" selection-start-line="10" selection-start-column="30" selection-end-line="10" selection-end-column="30" />
               <folding />
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="AlbumController.php" pinned="false" current-in-tab="false">
+      <file leaf-file-name="AlbumController.php" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/controllers/AlbumController.php">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="506">
-              <caret line="94" column="36" selection-start-line="94" selection-start-column="36" selection-end-line="94" selection-end-column="36" />
+            <state relative-caret-position="396">
+              <caret line="67" column="0" selection-start-line="67" selection-start-column="0" selection-end-line="67" selection-end-column="0" />
               <folding>
                 <element signature="n#onInit#0;n#AlbumController#0;n#!!top" expanded="false" />
                 <element signature="n#index#0;n#AlbumController#0;n#!!top" expanded="false" />
@@ -89,31 +79,11 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="view.php" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/views/home/view.php">
+      <file leaf-file-name="index.php" pinned="false" current-in-tab="false">
+        <entry file="file://$USER_HOME$/Desktop/UberGallery-v2.4.8/index.php">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="718">
-              <caret line="33" column="0" selection-start-line="33" selection-start-column="0" selection-end-line="33" selection-end-column="0" />
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="BaseController.php" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/controllers/BaseController.php">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="283">
-              <caret line="71" column="28" selection-start-line="71" selection-start-column="20" selection-end-line="71" selection-end-column="28" />
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="config.php" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/config.php">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="330">
-              <caret line="15" column="51" selection-start-line="15" selection-start-column="41" selection-end-line="15" selection-end-column="51" />
+            <state relative-caret-position="352">
+              <caret line="16" column="30" selection-start-line="16" selection-start-column="30" selection-end-line="16" selection-end-column="30" />
               <folding />
             </state>
           </provider>
@@ -122,38 +92,68 @@
       <file leaf-file-name="AlbumModel.php" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/models/AlbumModel.php">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="550">
-              <caret line="56" column="0" selection-start-line="56" selection-start-column="0" selection-end-line="56" selection-end-column="0" />
+            <state relative-caret-position="357">
+              <caret line="45" column="46" selection-start-line="45" selection-start-column="46" selection-end-line="45" selection-end-column="46" />
               <folding>
-                <element signature="n#getAll#0;n#AlbumModel#0;n#!!top" expanded="false" />
                 <element signature="n#getAlbumById#0;n#AlbumModel#0;n#!!top" expanded="false" />
                 <element signature="n#create#0;n#AlbumModel#0;n#!!top" expanded="false" />
                 <element signature="n#edit#0;n#AlbumModel#0;n#!!top" expanded="false" />
-                <element signature="n#delete#0;n#AlbumModel#0;n#!!top" expanded="false" />
+                <element signature="n#deletePhoto#0;n#AlbumModel#0;n#!!top" expanded="false" />
                 <element signature="n#getPhotoFileInfo#0;n#AlbumModel#0;n#!!top" expanded="false" />
                 <element signature="n#checkIfAlbumExist#0;n#AlbumModel#0;n#!!top" expanded="false" />
+                <element signature="n#AlbumPhotos#0;n#AlbumModel#0;n#!!top" expanded="false" />
                 <element signature="n#uploadPhoto#0;n#AlbumModel#0;n#!!top" expanded="false" />
                 <element signature="n#addToConnectionTable#0;n#AlbumModel#0;n#!!top" expanded="false" />
-                <marker date="1471721632193" expanded="true" signature="241:509" ph="SELECT *,alb... album" />
-                <marker date="1471721632193" expanded="true" signature="854:900" ph="INSERT INTO album... " />
-                <marker date="1471721632193" expanded="true" signature="1228:1258" ph="DELETE FROM " />
-                <marker date="1471721632193" expanded="true" signature="1491:1519" ph="DELETE FROM " />
-                <marker date="1471721632193" expanded="true" signature="1643:1698" ph="DELETE FROM " />
-                <marker date="1471721632193" expanded="true" signature="1890:1926" ph="SELECT * FRO... photo" />
-                <marker date="1471721632193" expanded="true" signature="2186:2267" ph="SELECT * FRO... album" />
-                <marker date="1471721632193" expanded="true" signature="2501:2649" ph="SELECT * FRO... album" />
-                <marker date="1471721632193" expanded="true" signature="3075:3144" ph="INSERT INTO photo... " />
-                <marker date="1471721632193" expanded="true" signature="3482:3540" ph="INSERT INTO album_photo... " />
+                <marker date="1471796009181" expanded="true" signature="134:402" ph="SELECT *,alb... album" />
+                <marker date="1471796009181" expanded="true" signature="747:793" ph="INSERT INTO album... " />
+                <marker date="1471796009181" expanded="true" signature="1153:1183" ph="DELETE FROM " />
+                <marker date="1471796009181" expanded="true" signature="1417:1445" ph="DELETE FROM " />
+                <marker date="1471796009181" expanded="true" signature="1569:1624" ph="DELETE FROM " />
+                <marker date="1471796009181" expanded="true" signature="1816:1852" ph="SELECT * FRO... photo" />
+                <marker date="1471796009181" expanded="true" signature="2112:2193" ph="SELECT * FRO... album" />
+                <marker date="1471796009181" expanded="true" signature="2427:2575" ph="SELECT * FRO... album" />
+                <marker date="1471796009181" expanded="true" signature="3001:3070" ph="INSERT INTO photo... " />
+                <marker date="1471796009181" expanded="true" signature="3408:3466" ph="INSERT INTO album_photo... " />
               </folding>
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="styles.css" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/content/styles.css">
+      <file leaf-file-name="main.js" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/content/scripts/main.js">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="462">
-              <caret line="55" column="21" selection-start-line="55" selection-start-column="21" selection-end-line="55" selection-end-column="21" />
+            <state relative-caret-position="550">
+              <caret line="55" column="15" selection-start-line="55" selection-start-column="15" selection-end-line="55" selection-end-column="44" />
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="BaseController.php" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/controllers/BaseController.php">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="88">
+              <caret line="7" column="14" selection-start-line="7" selection-start-column="14" selection-end-line="7" selection-end-column="14" />
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="register.php" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/views/users/register.php">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="484">
+              <caret line="22" column="77" selection-start-line="22" selection-start-column="77" selection-end-line="22" selection-end-column="77" />
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="create.php" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/views/album/create.php">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="264">
+              <caret line="12" column="7" selection-start-line="12" selection-start-column="7" selection-end-line="12" selection-end-column="7" />
               <folding />
             </state>
           </provider>
@@ -173,7 +173,6 @@
       <list>
         <option value="$PROJECT_DIR$/content/scripts/blog-scripts.js" />
         <option value="$PROJECT_DIR$/index.php" />
-        <option value="$PROJECT_DIR$/views/_layout/footer.php" />
         <option value="$PROJECT_DIR$/functions.php" />
         <option value="$PROJECT_DIR$/.htaccess" />
         <option value="$PROJECT_DIR$/config.php" />
@@ -181,22 +180,23 @@
         <option value="$PROJECT_DIR$/views/home/view.php" />
         <option value="$PROJECT_DIR$/views/home/index.php" />
         <option value="$PROJECT_DIR$/controllers/HomeController.php" />
-        <option value="$PROJECT_DIR$/views/users/login.php" />
         <option value="$PROJECT_DIR$/controllers/BaseController.php" />
-        <option value="$PROJECT_DIR$/views/album/create.php" />
         <option value="$PROJECT_DIR$/views/album/delete.php" />
         <option value="$PROJECT_DIR$/models/HomeModel.php" />
         <option value="$PROJECT_DIR$/models/UsersModel.php" />
-        <option value="$PROJECT_DIR$/controllers/UsersController.php" />
-        <option value="$PROJECT_DIR$/views/users/register.php" />
         <option value="$PROJECT_DIR$/views/album/edit.php" />
+        <option value="$PROJECT_DIR$/views/_layout/footer.php" />
+        <option value="$PROJECT_DIR$/controllers/UsersController.php" />
         <option value="$PROJECT_DIR$/views/_layout/header.php" />
+        <option value="$PROJECT_DIR$/views/album/view.php" />
         <option value="$PROJECT_DIR$/content/styles.css" />
-        <option value="$PROJECT_DIR$/models/AlbumModel.php" />
+        <option value="$PROJECT_DIR$/views/users/login.php" />
+        <option value="$PROJECT_DIR$/views/users/register.php" />
+        <option value="$PROJECT_DIR$/views/album/create.php" />
         <option value="$PROJECT_DIR$/views/album/index.php" />
         <option value="$PROJECT_DIR$/content/scripts/main.js" />
+        <option value="$PROJECT_DIR$/models/AlbumModel.php" />
         <option value="$PROJECT_DIR$/controllers/AlbumController.php" />
-        <option value="$PROJECT_DIR$/views/album/view.php" />
       </list>
     </option>
   </component>
@@ -468,12 +468,12 @@
       <option name="number" value="Default" />
       <option name="presentableId" value="Default" />
       <updated>1471522688119</updated>
-      <workItem from="1471522689842" duration="79346000" />
+      <workItem from="1471522689842" duration="101474000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="79346000" />
+    <option name="totallyTimeSpent" value="101474000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="-9" y="-9" width="1938" height="1048" extended-state="6" />
@@ -532,7 +532,7 @@
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>
-      <option name="time" value="4" />
+      <option name="time" value="5" />
     </breakpoint-manager>
     <watches-manager />
   </component>
@@ -645,18 +645,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/controllers/UsersController.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="137">
-          <caret line="73" column="25" selection-start-line="73" selection-start-column="12" selection-end-line="73" selection-end-column="25" />
-          <folding>
-            <element signature="n#register#0;n#UsersController#0;n#!!top" expanded="false" />
-            <element signature="e#1868#2492#0#PHP" expanded="false" />
-            <element signature="n#logout#0;n#UsersController#0;n#!!top" expanded="false" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/views/home/index.php">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="132">
@@ -673,66 +661,10 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/views/users/login.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="176">
-          <caret line="8" column="19" selection-start-line="8" selection-start-column="5" selection-end-line="8" selection-end-column="19" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/views/users/register.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="484">
-          <caret line="22" column="35" selection-start-line="22" selection-start-column="35" selection-end-line="22" selection-end-column="35" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/views/album/create.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="264">
-          <caret line="12" column="7" selection-start-line="12" selection-start-column="7" selection-end-line="12" selection-end-column="7" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/content/scripts/jquery-3.0.0.min.js">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="220">
           <caret line="1" column="1367" selection-start-line="1" selection-start-column="1367" selection-end-line="1" selection-end-column="1367" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/views/_layout/footer.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="220">
-          <caret line="10" column="0" selection-start-line="10" selection-start-column="0" selection-end-line="10" selection-end-column="0" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/views/_layout/header.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="594">
-          <caret line="27" column="21" selection-start-line="27" selection-start-column="21" selection-end-line="27" selection-end-column="21" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/views/_layout/show-validation-errors.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="0">
-          <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/views/_layout/fill-posted-fields.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="0">
-          <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
           <folding />
         </state>
       </provider>
@@ -745,42 +677,6 @@
             <folding />
           </first_editor>
           <second_editor />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/content/styles.css">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="462">
-          <caret line="55" column="21" selection-start-line="55" selection-start-column="21" selection-end-line="55" selection-end-column="21" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/models/AlbumModel.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="550">
-          <caret line="56" column="0" selection-start-line="56" selection-start-column="0" selection-end-line="56" selection-end-column="0" />
-          <folding>
-            <element signature="n#getAll#0;n#AlbumModel#0;n#!!top" expanded="false" />
-            <element signature="n#getAlbumById#0;n#AlbumModel#0;n#!!top" expanded="false" />
-            <element signature="n#create#0;n#AlbumModel#0;n#!!top" expanded="false" />
-            <element signature="n#edit#0;n#AlbumModel#0;n#!!top" expanded="false" />
-            <element signature="n#delete#0;n#AlbumModel#0;n#!!top" expanded="false" />
-            <element signature="n#getPhotoFileInfo#0;n#AlbumModel#0;n#!!top" expanded="false" />
-            <element signature="n#checkIfAlbumExist#0;n#AlbumModel#0;n#!!top" expanded="false" />
-            <element signature="n#uploadPhoto#0;n#AlbumModel#0;n#!!top" expanded="false" />
-            <element signature="n#addToConnectionTable#0;n#AlbumModel#0;n#!!top" expanded="false" />
-            <marker date="1471721632193" expanded="true" signature="241:509" ph="SELECT *,alb... album" />
-            <marker date="1471721632193" expanded="true" signature="854:900" ph="INSERT INTO album... " />
-            <marker date="1471721632193" expanded="true" signature="1228:1258" ph="DELETE FROM " />
-            <marker date="1471721632193" expanded="true" signature="1491:1519" ph="DELETE FROM " />
-            <marker date="1471721632193" expanded="true" signature="1643:1698" ph="DELETE FROM " />
-            <marker date="1471721632193" expanded="true" signature="1890:1926" ph="SELECT * FRO... photo" />
-            <marker date="1471721632193" expanded="true" signature="2186:2267" ph="SELECT * FRO... album" />
-            <marker date="1471721632193" expanded="true" signature="2501:2649" ph="SELECT * FRO... album" />
-            <marker date="1471721632193" expanded="true" signature="3075:3144" ph="INSERT INTO photo... " />
-            <marker date="1471721632193" expanded="true" signature="3482:3540" ph="INSERT INTO album_photo... " />
-          </folding>
         </state>
       </provider>
     </entry>
@@ -800,6 +696,22 @@
         </state>
       </provider>
     </entry>
+    <entry file="file://$PROJECT_DIR$/views/_layout/fill-posted-fields.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="0">
+          <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/views/_layout/show-validation-errors.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="0">
+          <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/views/_layout/show-notify-messages.php">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="0">
@@ -808,18 +720,29 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/controllers/BaseController.php">
+    <entry file="file://$PROJECT_DIR$/views/_layout/footer.php">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="283">
-          <caret line="71" column="28" selection-start-line="71" selection-start-column="20" selection-end-line="71" selection-end-column="28" />
+        <state relative-caret-position="176">
+          <caret line="8" column="10" selection-start-line="8" selection-start-column="10" selection-end-line="8" selection-end-column="10" />
           <folding />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/content/scripts/main.js">
+    <entry file="file://$PROJECT_DIR$/controllers/UsersController.php">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="660">
-          <caret line="30" column="38" selection-start-line="30" selection-start-column="38" selection-end-line="30" selection-end-column="38" />
+          <caret line="71" column="9" selection-start-line="71" selection-start-column="9" selection-end-line="71" selection-end-column="9" />
+          <folding>
+            <element signature="n#register#0;n#UsersController#0;n#!!top" expanded="false" />
+            <element signature="n#logout#0;n#UsersController#0;n#!!top" expanded="false" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/views/_layout/header.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="137">
+          <caret line="15" column="41" selection-start-line="15" selection-start-column="41" selection-end-line="15" selection-end-column="41" />
           <folding />
         </state>
       </provider>
@@ -832,10 +755,110 @@
         </state>
       </provider>
     </entry>
+    <entry file="file://$PROJECT_DIR$/content/styles.css">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="467">
+          <caret line="168" column="6" selection-start-line="168" selection-start-column="6" selection-end-line="168" selection-end-column="17" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/views/users/login.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="220">
+          <caret line="10" column="30" selection-start-line="10" selection-start-column="30" selection-end-line="10" selection-end-column="30" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/views/users/register.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="484">
+          <caret line="22" column="77" selection-start-line="22" selection-start-column="77" selection-end-line="22" selection-end-column="77" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/views/album/create.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="264">
+          <caret line="12" column="7" selection-start-line="12" selection-start-column="7" selection-end-line="12" selection-end-column="7" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/views/album/view.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="445">
+          <caret line="40" column="16" selection-start-line="40" selection-start-column="16" selection-end-line="40" selection-end-column="132" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/views/album/index.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="638">
+          <caret line="53" column="0" selection-start-line="53" selection-start-column="0" selection-end-line="53" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/content/scripts/main.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="550">
+          <caret line="55" column="15" selection-start-line="55" selection-start-column="15" selection-end-line="55" selection-end-column="44" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/models/AlbumModel.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="357">
+          <caret line="45" column="46" selection-start-line="45" selection-start-column="46" selection-end-line="45" selection-end-column="46" />
+          <folding>
+            <element signature="n#getAlbumById#0;n#AlbumModel#0;n#!!top" expanded="false" />
+            <element signature="n#create#0;n#AlbumModel#0;n#!!top" expanded="false" />
+            <element signature="n#edit#0;n#AlbumModel#0;n#!!top" expanded="false" />
+            <element signature="n#deletePhoto#0;n#AlbumModel#0;n#!!top" expanded="false" />
+            <element signature="n#getPhotoFileInfo#0;n#AlbumModel#0;n#!!top" expanded="false" />
+            <element signature="n#checkIfAlbumExist#0;n#AlbumModel#0;n#!!top" expanded="false" />
+            <element signature="n#AlbumPhotos#0;n#AlbumModel#0;n#!!top" expanded="false" />
+            <element signature="n#uploadPhoto#0;n#AlbumModel#0;n#!!top" expanded="false" />
+            <element signature="n#addToConnectionTable#0;n#AlbumModel#0;n#!!top" expanded="false" />
+            <marker date="1471796009181" expanded="true" signature="134:402" ph="SELECT *,alb... album" />
+            <marker date="1471796009181" expanded="true" signature="747:793" ph="INSERT INTO album... " />
+            <marker date="1471796009181" expanded="true" signature="1153:1183" ph="DELETE FROM " />
+            <marker date="1471796009181" expanded="true" signature="1417:1445" ph="DELETE FROM " />
+            <marker date="1471796009181" expanded="true" signature="1569:1624" ph="DELETE FROM " />
+            <marker date="1471796009181" expanded="true" signature="1816:1852" ph="SELECT * FRO... photo" />
+            <marker date="1471796009181" expanded="true" signature="2112:2193" ph="SELECT * FRO... album" />
+            <marker date="1471796009181" expanded="true" signature="2427:2575" ph="SELECT * FRO... album" />
+            <marker date="1471796009181" expanded="true" signature="3001:3070" ph="INSERT INTO photo... " />
+            <marker date="1471796009181" expanded="true" signature="3408:3466" ph="INSERT INTO album_photo... " />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/controllers/BaseController.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="88">
+          <caret line="7" column="14" selection-start-line="7" selection-start-column="14" selection-end-line="7" selection-end-column="14" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$USER_HOME$/Desktop/UberGallery-v2.4.8/index.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="352">
+          <caret line="16" column="30" selection-start-line="16" selection-start-column="30" selection-end-line="16" selection-end-column="30" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/controllers/AlbumController.php">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="506">
-          <caret line="94" column="36" selection-start-line="94" selection-start-column="36" selection-end-line="94" selection-end-column="36" />
+        <state relative-caret-position="396">
+          <caret line="67" column="0" selection-start-line="67" selection-start-column="0" selection-end-line="67" selection-end-column="0" />
           <folding>
             <element signature="n#onInit#0;n#AlbumController#0;n#!!top" expanded="false" />
             <element signature="n#index#0;n#AlbumController#0;n#!!top" expanded="false" />
@@ -847,22 +870,6 @@
             <element signature="n#view#0;n#AlbumController#0;n#!!top" expanded="false" />
             <element signature="n#uploadPhoto#0;n#AlbumController#0;n#!!top" expanded="false" />
           </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/views/album/index.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="462">
-          <caret line="21" column="63" selection-start-line="21" selection-start-column="63" selection-end-line="21" selection-end-column="63" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/views/album/view.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="374">
-          <caret line="29" column="54" selection-start-line="29" selection-start-column="54" selection-end-line="29" selection-end-column="54" />
-          <folding />
         </state>
       </provider>
     </entry>

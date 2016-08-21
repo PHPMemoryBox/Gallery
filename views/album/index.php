@@ -6,9 +6,9 @@ $this->title = 'Albums'; ?>
 <h1><?=htmlspecialchars($this->title)?></h1>
 
 <!--upload photo-->
-<form method="POST" action="<?=APP_ROOT?>/album/uploadPhoto" enctype="multipart/form-data">
-    <label for="album_name">Choose a file</label>
-    <input type="file" name="file_to_upload"  accept="image/*" class="custom-file-input"/>
+<form method="POST" action="<?=APP_ROOT?>/album/uploadPhoto" enctype="multipart/form-data" class="upload_photo_form">
+    <label for="album_name"> Upload photo</label>
+    <input class="write_field" type="file" name="file_to_upload"  accept="image/*" class="custom-file-input"/>
 
     <label for="album_id_option">Select album</label>
     <select name="album_id_option">
@@ -20,7 +20,7 @@ $this->title = 'Albums'; ?>
     </select>
 
     <input type="hidden" name="redirect"  value="<?=APP_ROOT?>/album"/>
-    <button class="btn" type="submit" name="sumbit"> Upload </button>
+    <button class="button" type="submit" name="sumbit"> <span> Upload </span></button>
 </form>
 
 
@@ -39,15 +39,17 @@ $this->title = 'Albums'; ?>
                     $thumbnails_file = APP_ROOT . THUMBNAILS_PATH . $album['photo_id'] . '.jpg';
                 }
                 ?>
-                <li>
+                <li id="album<?=$album['album_id']?>">
                     <a href='<?=APP_ROOT?>/album/view/<?=$album['album_id']?>'> <img src='<?=$thumbnails_file?>' class="thumbnail"/></a>
 
                     <h2 class="album_name"> <?=htmlspecialchars($album['name']) ?> </h2>
 
                     <div class="date">
 
-                        <i>Created on</i>
+                        <i>Created on</i><br/>
                         <?=(new DateTime($album['create_date']))->format('d-M-Y') ?>
+                       <span onclick="deleteAlbum('<?=$album['album_id']?>')"> <img src='<?=APP_ROOT?><?=CONTENT ?>images/delete.png'> </span>
+
                     </div>
 
 

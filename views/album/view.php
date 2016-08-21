@@ -1,21 +1,21 @@
 <!-- display an album photos here -->
 
 <?php
-$this->title = "Post Title";
+$this->title = "";
 ?>
 
 <h1><?=htmlspecialchars($this->title)?></h1>
 
 
 <!--upload photo-->
-<form method="POST" action="<?=APP_ROOT?>/album/uploadPhoto" enctype="multipart/form-data">
-    <label for="album_name">Choose a file</label>
+<form method="POST" action="<?=APP_ROOT?>/album/uploadPhoto" enctype="multipart/form-data" class="upload_photo_form">
+    <label for="album_name">Upload photo</label>
     <input type="file" name="file_to_upload"  accept="image/*" class="custom-file-input"/>
 
     <input type="hidden" name="album_id_option"  value="<?=$this->album_id?>"/>
     <input type="hidden" name="redirect"  value="<?=APP_ROOT?>/album/view/<?=$this->album_id?>"/>
 
-    <button class="btn" type="submit" name="sumbit"> Upload </button>
+    <button class="button" type="submit" name="sumbit"> <span> Upload </span></button>
 </form>
 
 
@@ -49,4 +49,4 @@ $this->title = "Post Title";
 
 </ul>
 
-<button onclick="deleteMultiple()">Delete selected</button>
+<button class="button" onclick="deleteMultiple()"> <span>Delete selected</span></button>

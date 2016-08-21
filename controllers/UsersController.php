@@ -48,50 +48,28 @@ class UsersController extends BaseController
             session_start();
         }
 
-        /* $message = "";
+        if ($this->isPost) {
 
-        //if (isset($_SESSION['user_id'])) {
-        //    exit;
-       // }
+            if ((isset($_POST['email']) && isset($_POST['password']))
+                && ($_POST['email'] && $_POST['password'])
+            ) {
 
-        if (isset($_POST['email'], $_POST['password'])) {
-            $email = $_POST['email'];
-            $password = $_POST['password'];
+                $email = $_POST['email'];
+                $password = $_POST['password'];
+                $loggedUserId = $this->model->login($email, $password);
 
-            $user = $this->model->login($email, $password);
+                if ($loggedUserId) {
+                    $_SESSION['user_id'] = $loggedUserId['id'];
+                    $_SESSION['name'] = $loggedUserId['name'];
 
-            if ($user) {
-                $_SESSION['user_id'] = $user['id'];
-                $_SESSION['name'] = $user['name'];
-                return $this->redirect('album');
+                    return $this->redirect('home');
+                } else {
+                    $this->addErrorMessage("Error: login failed!");
+                }
             } else {
-                $message = "Incorrect email or password";
+                $this->addErrorMessage("Enter email and password!");
             }
         }
-
-        $_SESSION['messages'] = $message; */
-
-        if ($this->isPost
-            && (isset($_POST['email']) && isset($_POST['password']))
-            && ($_POST['email'] && $_POST['password'])
-        ) {
-            $email = $_POST['email'];
-            $password = $_POST['password'];
-            $loggedUserId = $this->model->login($email, $password);
-
-            if ($loggedUserId) {
-                $_SESSION['user_id'] = $loggedUserId['id'];
-                $_SESSION['name'] = $loggedUserId['name'];
-
-                return $this->redirect('home');
-            }
-            else {
-                $this->addErrorMessage("Error: login failed!");
-            }
-        } else {
-            $this->addErrorMessage("Error: enter email and password!");
-        }
-
     }
 
     public function logout()

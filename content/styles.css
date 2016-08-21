@@ -12,16 +12,25 @@
 }
 
 html {
-    background-color: #939393;
     font-size: 100%;
+    background-image: url('images/blurry.jpg');
+    background-repeat: no-repeat;
+    background-attachment: fixed;
 }
 
 body {
-    background-color: #939393;
-    color: #000000;
     font-family: Arial, Helvetica, sans-serif, Verdana;
     font-size: 1em;
-    padding: 60px 100px;
+    padding: 3% 4%;
+}
+
+#website {
+    margin: 0 auto;
+    width: 85%;
+    padding:3%;
+    border-radius: 2%;
+    background-color: rgba(171, 44, 209, 0.6);
+
 }
 
 ul li {
@@ -52,7 +61,7 @@ header ul, footer {
     margin: 0;
     padding: 0;
     overflow: hidden;
-    background-color: #333;
+    background-color: rgba(1, 65, 88, 0.8);
     border-radius: 15px;
 }
 
@@ -60,15 +69,21 @@ header ul li {
     float: left;
 }
 
-header ul li a, footer {
+header>ul>li>a, footer {
     display: block;
     color: white;
     text-align: center;
     padding: 14px 16px;
     text-decoration: none;
+    vertical-align: middle;
+    font-size: 1.2em;
+
 }
 
-header ul li a:hover:not(.active) {background-color: #111;}
+header ul li a:hover:not(.active) {
+    background-color: darkcyan;
+    border-radius: 12px;
+}
 
 header ul li a:active {background-color: #4CAF50;}
 
@@ -82,12 +97,55 @@ header ul li.right {
     header ul li {float: none;}
 }
 
+li#site-logo img{
+    width: 12%;
+    height:17%;
+}
 
 
 /* -------------------------------------------------------------------------- */
-/* -----| PHOTOS |---------------------------------------------------------- */
+/* -----| BUTTONS |---------------------------------------------------------- */
 /* -------------------------------------------------------------------------- */
 
+.button {
+    display: inline-block;
+    border-radius: 2px;
+    background-color: seagreen;
+    border: none;
+    color: #FFFFFF;
+    text-align: center;
+    font-size: 1em;
+    padding: 10px 5px 10px 5px;
+    width: auto;
+    transition: all 0.5s;
+    cursor: pointer;
+    margin: 5px;
+}
+
+.button span {
+    cursor: pointer;
+    display: inline-block;
+    position: relative;
+    transition: 0.5s;
+}
+
+.button span:after {
+    content: '»';
+    position: absolute;
+    opacity: 0;
+    top: 0;
+    right: -20px;
+    transition: 0.5s;
+}
+
+.button:hover span {
+    padding-right: 25px;
+}
+
+.button:hover span:after {
+    opacity: 1;
+    right: 0;
+}
 
 
 
@@ -96,28 +154,59 @@ header ul li.right {
 /* -----| LOGIN FORM |------------------------------------------------------- */
 /* -------------------------------------------------------------------------- */
 
+/* -------------------------------------------------------------------------- */
+/* -----| PHOTOS |------------------------------------------------------- */
+/* -------------------------------------------------------------------------- */
 
+/* -------------------------------------------------------------------------- */
+/* -----| REGISTER FORM |------------------------------------------------------- */
+/* -------------------------------------------------------------------------- */
 
+#register {
+    width: 300px;
+}
 
+input.write_field {
+    padding:5px;
+    width: 200px;
+}
+/* -------------------------------------------------------------------------- */
+/* -----| UPLOAD FORM |------------------------------------------------------- */
+/* -------------------------------------------------------------------------- */
 
+.custom-file-input::-webkit-file-upload-button {
+    visibility: visible;
+    display: inline-block;
+    background: -webkit-linear-gradient(top, #f9f9f9, #e3e3e3);
+    border: 1px solid #999;
+    border-radius: 3px;
+    padding: 5px 8px;
+    outline: none;
+    -webkit-user-select: none;
+    cursor: pointer;
+    text-shadow: 1px 1px #fff;
+    font-weight: 700;
+    font-size: 10pt;
+}
 
+.upload_photo_form {
+    padding:1%;
+    width: 40%;
+    margin: auto;
+}
 
 /* -------------------------------------------------------------------------- */
 /* -----| DEFAULT |---------------------------------------------------------- */
 /* -------------------------------------------------------------------------- */
 
 
-/*
+
 body>header {
-    background: #eee;
     padding: 5px;
 }
 
 body>header>a>img, body>header a  {
-    display: inline-block;
-    vertical-align: middle;
-    padding: 0px 5px;
-    font-size: 1.2em;
+
 }
 
 body>footer {
@@ -162,25 +251,7 @@ ul#messages li.error {
     margin-right: 10px;
 }
 
-body>aside {
-    float: right;
-    width: 200px;
-    background: #CCC;
-    padding: 15px;
-    margin-left: 20px;
-}
-
-body>aside h2 {
-    margin: 5px 0px 15px 0px;
-}
-
-body>aside a {
-    display: block;
-    margin: 5px 0px;
-    text-decoration: none;
-}
 
 
 
-*/
 

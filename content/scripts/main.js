@@ -14,7 +14,6 @@ function deleteMultiple(photoid) {
                 if ($(this).is(":checked")) {
                     ids.push($(this).attr("data-photoid"));
                 }
-
             });
         } else {
             ids.push(photoid);
@@ -37,5 +36,29 @@ function deleteMultiple(photoid) {
                 console.log(data);
             }
         });
+    }
+}
+
+
+function deleteAlbum(albumid) {
+    if (confirm("Are you sure you want to delete this album?")) {
+
+        var data = {};
+
+        data['albumid'] = albumid;
+
+        $.ajax({
+            type: "POST",
+            url: "/gallery/album/delete",
+            data: data,
+            dataType: "json",
+            success: function (data) {
+                $("#album" + data).remove();
+            },
+            error: function (data) {
+                console.log(data);
+            }
+        });
+
     }
 }

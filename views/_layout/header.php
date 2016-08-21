@@ -10,18 +10,22 @@
 </head>
 
 <body>
+<div id="website">
 <header>
     <ul>
-        <li><a href="<?=APP_ROOT?>"><img src="<?=APP_ROOT?>/content/images/site-logo.png"></a></li>
+        <!--<li id="site-logo"><img src="<?=APP_ROOT?>/content/images/site-logo.png"></li>-->
+
         <li><a href="<?=APP_ROOT?>/">Home</a></li>
         <?php if ($this->isLoggedIn) : ?>
         <li><a href="<?=APP_ROOT?>/album">Albums</a></li>
         <li><a href="<?=APP_ROOT?>/album/create">Create Album</a></li>
         <li> <a href="<?=APP_ROOT?>/users">Users</a></li>
+
         <?php else: ?>
         <li> <a href="<?=APP_ROOT?>/users/login">Login</a></li>
         <li> <a href="<?=APP_ROOT?>/users/register">Register</a></li>
         <?php endif; ?>
+
         <?php if ($this->isLoggedIn) : ?>
         <li class="right">  <div id="logged-in-info">
              <span>Hello, <b><?=htmlspecialchars($_SESSION['name'])?></b></span>
