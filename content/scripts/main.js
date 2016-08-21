@@ -62,3 +62,17 @@ function deleteAlbum(albumid) {
 
     }
 }
+
+$(document).ready(function(){
+    $(".color_box").colorbox({rel:'.color_box'});
+});
+
+function openPopup(photo_id, photo_path) {
+
+    //$.colorbox({html:"<img src='" + photo_path + "'/>",
+    //            width: 800,
+    //            heigh: 800
+    //});
+
+
+}

@@ -1,5 +1,7 @@
 <?php
 
+include_once('Mail.php');
+
 class UsersController extends BaseController
 {
     public function register()
@@ -32,11 +34,24 @@ class UsersController extends BaseController
                     $_SESSION['name'] = $name;
 
                     $this->addInfoMessage("Registration successful.");
+
+                    try {
+                        $mail = new Gallery_Mail();
+                        $mail->send($email, "register ok", "registrira se ok");
+                    }
+                    catch (Exception  $ex){
+                        var_dump($ex->getMessage());exit;
+                    }
+
+                    //send mail
+
+
                     $this->redirect('home');
                 } else {
                     $this->addErrorMessage("User registration failed!");
                 }
             }
+
         }
 
 

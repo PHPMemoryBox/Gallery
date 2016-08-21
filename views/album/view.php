@@ -33,11 +33,12 @@ $this->title = "";
         $thumbnails_file = APP_ROOT . THUMBNAILS_PATH . $photo['id'] . '.jpg';
 
         ?>
-        <li id="photo<?=$photo['id']?>">
+        <li id="photo<?=$photo['id']?>" title="<?=$photo['photo_name']?>">
 
-            <a href='<?=APP_ROOT?><?=PHOTOS_PATH . $photo['id'] . '.' . $photo['file_format']?>'> <img src='<?=$thumbnails_file?>'/></a>
+           <!-- <a href='<?=APP_ROOT?><?=PHOTOS_PATH . $photo['id'] . '.' . $photo['file_format']?>'> <img src='<?=$thumbnails_file?>'/></a> -->
 
-            <h2 class="photo_name"> <?= $photo_name ?>
+            <a class="color_box" href="<?=APP_ROOT?><?=PHOTOS_PATH . $photo['id'] . '.' . $photo['file_format']?>" > <img src='<?=$thumbnails_file?>'/></a>
+            <h2 class="photo_name" > <?= $photo_name ?>
                 <span onclick="deleteMultiple('<?=$photo['id']?>')"> <img src='<?=APP_ROOT?><?=CONTENT ?>images/delete.png'> </span>
                 <input class="delete_checkbox" type="checkbox" name="multiple_delete" data-photoid="<?=$photo['id']?>">
             </h2>

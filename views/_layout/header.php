@@ -3,9 +3,11 @@
 
 <head>
     <link rel="stylesheet" href="<?=APP_ROOT?>/content/styles.css" />
+    <link rel="stylesheet" href="<?=APP_ROOT?>/content/colorbox.css" />
     <link rel="icon" href="<?=APP_ROOT?>/content/images/favicon.ico" />
     <script src="<?=APP_ROOT?>/content/scripts/jquery-3.0.0.min.js"></script>
     <script src="<?=APP_ROOT?>/content/scripts/main.js"></script>
+    <script src="<?=APP_ROOT?>/content/scripts/jquery.colorbox.js"></script>
     <title><?php if (isset($this->title)) echo htmlspecialchars($this->title) ?></title>
 </head>
 
