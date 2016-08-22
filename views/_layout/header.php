@@ -15,7 +15,6 @@
 <div id="website">
 <header>
     <ul>
-        <!--<li id="site-logo"><img src="<?=APP_ROOT?>/content/images/site-logo.png"></li>-->
 
         <li><a href="<?=APP_ROOT?>/">Home</a></li>
         <?php if ($this->isLoggedIn) : ?>

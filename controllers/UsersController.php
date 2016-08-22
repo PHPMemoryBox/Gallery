@@ -70,7 +70,7 @@ class UsersController extends BaseController
 
                     return $this->redirect('home');
                 } else {
-                    $this->addErrorMessage("Error: login failed!");
+                    $this->addErrorMessage("Wrong email or password!");
                 }
             } else {
                 $this->addErrorMessage("Enter email and password!");

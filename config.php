@@ -16,6 +16,7 @@ define('PHOTOS_PATH', CONTENT . 'photos/');
 define('THUMBNAILS_PATH', PHOTOS_PATH . 'thumbnails/');
 
 
+//mail settings
 define('MAIL_HOST', "smtp.gmail.com");
 define('MAIL_PORT', "587");
 define('MAIL_AUTH', "true");

@@ -39,7 +39,6 @@ function deleteMultiple(photoid) {
     }
 }
 
-
 function deleteAlbum(albumid) {
     if (confirm("Are you sure you want to delete this album?")) {
 
@@ -67,12 +66,5 @@ $(document).ready(function(){
     $(".color_box").colorbox({rel:'.color_box'});
 });
 
-function openPopup(photo_id, photo_path) {
-
-    //$.colorbox({html:"<img src='" + photo_path + "'/>",
-    //            width: 800,
-    //            heigh: 800
-    //});
 
 
-}
