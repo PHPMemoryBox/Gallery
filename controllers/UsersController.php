@@ -7,14 +7,14 @@ class UsersController extends BaseController
     public function register()
     {
 		if ($this->isPost) {
-            $city = $_POST['city'];
 
+            //set variables
 		    $email = $_POST['email'];
             $password = $_POST['password'];
             $name = $_POST['name'];
+            $city = $_POST['city'];
 
-            if($_POST['name']=='' || $_POST['email']=='' || $_POST['password']==''|| $_POST['confirm_password']=='')
-            {
+            if($name=='' || $email=='' || $password==''|| $_POST['confirm_password']=='') {
                 $this->addErrorMessage("Please fill all of the empty fields.");
             } else if (strlen($email) < 2 || !strpos($email, '@')){
                 $this->addErrorMessage("Invalid email!");
@@ -22,12 +22,13 @@ class UsersController extends BaseController
                 $this->addErrorMessage("Invalid password lenght!");
             } else if (strlen($name) > 200) {
                 $this->addErrorMessage("Invalid name length!");
-            } else if ( $_POST['password'] != $_POST['confirm_password']) {
+            } else if ( $password != $_POST['confirm_password']) {
                 $this->addErrorMessage("Password does not match.");
             } else if ($this->model->checkIfEmailExist($email)) {
                 $this->addErrorMessage("Email already used.");
             } else if ($this->formValid()) {
-                $userId = $this->model->register($_POST['email'], $_POST['password'], $_POST['name'], $_POST['city']);
+                $userId = $this->model->register($email, $password, $name,  $city);
+
                 if ($userId) {
                     $_SESSION['email'] = $email;
                     $_SESSION['user_id'] = $userId;
@@ -35,26 +36,16 @@ class UsersController extends BaseController
 
                     $this->addInfoMessage("Registration successful.");
 
-                    try {
-                        $mail = new Gallery_Mail();
-                        $mail->send($email, "register ok", "registrira se ok");
-                    }
-                    catch (Exception  $ex){
-                        var_dump($ex->getMessage());exit;
-                    }
-
-                    //send mail
-
+                    //if registered send mail
+                    $mail = new Gallery_Mail();
+                    $mail->send($email, "register ok", "registrira se ok");
 
                     $this->redirect('home');
                 } else {
                     $this->addErrorMessage("User registration failed!");
                 }
             }
-
         }
-
-
     }
 
     public function login()

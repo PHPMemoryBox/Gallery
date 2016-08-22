@@ -13,7 +13,7 @@
 
 html {
     font-size: 100%;
-    /*background-image: url('images/blurry.jpg');*/
+    background-image: url('images/blurry.jpg');
     background-repeat: no-repeat;
     background-attachment: fixed;
 }

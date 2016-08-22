@@ -16,6 +16,7 @@ class AlbumController extends BaseController
 
     }
 
+    //create new album
     public function create() {
         if ($this->isPost) {
             $name = $_POST['album_name'];
@@ -33,10 +34,6 @@ class AlbumController extends BaseController
             }
 
         }
-    }
-
-    public function edit() {
-
     }
 
     public function deletePhoto($photoid, $albumid) {
@@ -66,6 +63,7 @@ class AlbumController extends BaseController
         echo json_encode($photoids); exit;
     }
 
+    //delete album
     public function delete() {
 
         $albumid = $_POST['albumid'];
@@ -101,6 +99,7 @@ class AlbumController extends BaseController
 
         echo $albumid; exit;
     }
+
 
     public function view($id) {
         $this->albums = $this->model->AlbumPhotos($id);

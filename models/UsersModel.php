@@ -7,16 +7,6 @@ class UsersModel extends BaseModel
         $result = self::$db->query($sql);
         $user = $result->fetch_assoc();
         return $user;
-
-
-        /*$statement = self::$db->prepare('SELECT * FROM user where email =?');
-        $statement->bind_param('s',  $email);
-        $statement->execute();
-        $result = $statement->get_result()->fetch_assoc();*/
-
-        /*if (password_verify(md5($password), $result['password']))
-            return $result['id'];
-        return false;*/
     }
 
     public function register(string $email, string $password, string $name, string $city){
