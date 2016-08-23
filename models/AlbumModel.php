@@ -30,11 +30,6 @@ class AlbumModel extends BaseModel
         return $stmt->affected_rows == 1;
     }
 
-    public function edit(int $album_id) : bool
-    {
-        //TODO: delete photos from album
-    }
-
     public function delete(int $album_id) : bool
     {
         //check if album exist

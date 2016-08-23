@@ -2,7 +2,22 @@
 
 class HomeModel extends BaseModel
 {
-    // TODO: your database access functions for the home page will come here ...
+
+ public function showLatestPhotos($user_id) {
+     $statement = self::$db->prepare("SELECT * FROM photo WHERE user_id=?");
+     $statement->bind_param("s", $user_id);
+     $statement->execute();
+
+     $result = $statement->get_result();
+
+     $photos = [];
+
+     while ($photo = $result->fetch_assoc()) {
+         $photos[] = $photo;
+
+     }
+     return $photos;
+ }
 
 
 

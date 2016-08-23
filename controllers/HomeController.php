@@ -2,20 +2,17 @@
 
 class HomeController extends BaseController
 {
-
-
-    //$user_albums -array with albums- calls GetAlbums function from model
-
     function index() {
-        //$user_albums = $this->model->GetAlbums($_SESSION['user_id']);
 
-        //$this->albums = $user_albums;
+        $user_id = $_SESSION['user_id'];
+
+        $this->photos = $this->model->showLatestPhotos($user_id);
+
     }
 
+    public function view() {
 
-	function view($id) {
-        //$this->album_photos = $this->model->AlbumPhotos($id);
 
-        //$this->album_id = $id;
     }
+
 }

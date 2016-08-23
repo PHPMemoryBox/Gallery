@@ -100,7 +100,6 @@ class AlbumController extends BaseController
         echo $albumid; exit;
     }
 
-
     public function view($id) {
         $this->albums = $this->model->AlbumPhotos($id);
 

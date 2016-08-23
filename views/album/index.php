@@ -40,7 +40,7 @@ $this->title = 'Albums'; ?>
                 }
                 ?>
                 <li id="album<?=$album['album_id']?>">
-                    <a href='<?=APP_ROOT?>/album/view/<?=$album['album_id']?>'> <img src='<?=$thumbnails_file?>' class="thumbnail"/></a>
+                    <a class="album" href='<?=APP_ROOT?>/album/view/<?=$album['album_id']?>'> <img src='<?=$thumbnails_file?>' class="thumbnail"/></a>
 
                     <h2 class="album_name"> <?=htmlspecialchars($album['name']) ?> </h2>
 
@@ -48,7 +48,7 @@ $this->title = 'Albums'; ?>
 
                         <i>Created on</i><br/>
                         <?=(new DateTime($album['create_date']))->format('d-M-Y') ?>
-                       <span onclick="deleteAlbum('<?=$album['album_id']?>')"> <img src='<?=APP_ROOT?><?=CONTENT ?>images/delete.png'> </span>
+                       <span onclick="deleteAlbum('<?=$album['album_id']?>')"> <img id="delete" src='<?=APP_ROOT?><?=CONTENT ?>images/delete.png'> </span>
 
                     </div>
 

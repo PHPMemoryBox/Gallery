@@ -13,7 +13,7 @@
 
 html {
     font-size: 100%;
-    background-image: url('images/blurry.jpg');
+    background-image: url('images/green.jpg');
     background-repeat: no-repeat;
     background-attachment: fixed;
 }
@@ -29,7 +29,10 @@ body {
     width: 85%;
     padding:3%;
     border-radius: 2%;
-    background-color: rgba(171, 44, 209, 0.6);
+    background-image: url('images/yellow.jpg');
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+
 
 }
 
@@ -157,6 +160,40 @@ li#site-logo img{
 /* -------------------------------------------------------------------------- */
 /* -----| PHOTOS |------------------------------------------------------- */
 /* -------------------------------------------------------------------------- */
+
+a.color_box img {
+    border: 5px solid #33656C;
+    padding: 5px;
+    box-shadow: 8px 8px 10px #aaa;
+}
+
+a.color_box img:hover {
+    opacity: 1;
+}
+
+a.album img {
+    border-radius: 100%;
+}
+
+img#delete {
+    width: 15px;
+    height: 15px;
+    position: relative;
+    float: right;
+}
+
+
+.photo_container {
+    position: relative;
+    display: inline-block;
+}
+
+/*delete in top right div*/
+.delete_container {
+    position: absolute;
+    top: 16px;
+    right: 16px;
+}
 
 /* -------------------------------------------------------------------------- */
 /* -----| REGISTER FORM |------------------------------------------------------- */
