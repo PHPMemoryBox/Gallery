@@ -10,6 +10,11 @@ define('DB_USER', 'admin');
 define('DB_PASS', '1234');
 define('DB_NAME', 'gallery');
 
+//define('DB_HOST', 'localhost');
+//define('DB_USER', 'root');
+//define('DB_PASS', '');
+//define('DB_NAME', 'gallery');
+
 define('CWD', getcwd());
 define('CONTENT', '/content/');
 define('PHOTOS_PATH', CONTENT . 'photos/');

@@ -3,7 +3,7 @@
 
 ?>
 
-<h1><?=htmlspecialchars($this->title)?></h1>
+
 
 <!DOCTYPE html>
 <html lang="en">

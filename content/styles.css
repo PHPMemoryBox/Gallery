@@ -2,56 +2,56 @@
 /* -----| GENERAL |---------------------------------------------------------- */
 /* -------------------------------------------------------------------------- */
 
-/** {*/
-    /*margin: 0;*/
-    /*padding: 0;*/
-    /*box-sizing: border-box;*/
-    /*-webkit-user-select:none;*/
-    /*-moz-user-select:none;*/
-    /*-ms-user-select:none;*/
-/*}*/
+/** {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    -webkit-user-select:none;
+    -moz-user-select:none;
+    -ms-user-select:none;
+}
 
-/*html {*/
-    /*font-size: 100%;*/
-    /*background-image: url('images/green.jpg');*/
-    /*background-repeat: no-repeat;*/
-    /*background-attachment: fixed;*/
-/*}*/
+html {
+    font-size: 100%;
+    background-image: url('images/header.jpg');
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    background-size: cover;
+}
 
-/*body {*/
-    /*font-family: Arial, Helvetica, sans-serif, Verdana;*/
-    /*font-size: 1em;*/
-    /*padding: 3% 4%;*/
-/*}*/
+body {
+    font-family: Arial, Helvetica, sans-serif, Verdana;
+    font-size: 1em;
+    padding: 3% 4%;
+}
 
-/*#website {*/
-    /*margin: 0 auto;*/
-    /*width: 85%;*/
-    /*padding:3%;*/
-    /*border-radius: 2%;*/
-    /*background-image: url('images/yellow.jpg');*/
-    /*background-repeat: no-repeat;*/
-    /*background-attachment: fixed;*/
+#website {
+    margin: 0 auto;
+    width: 85%;
+    padding:3%;
+    border-radius: 2%;
+    background-color: rgba(171, 44, 209, 0.6);
+
+}
+
+ul li {
+    list-style: none;
+    display: inline-block;
+    padding: 5px;
+}
+
+img.thumbnail {
+    width: 7em ;
+    height: 7em;
+}
+
+body>main:after {
+    content: '';
+    display: block;
+    clear: both;
+}*/
 
 
-/*}*/
-
-/*ul li {*/
-    /*list-style: none;*/
-    /*display: inline-block;*/
-    /*padding: 5px;*/
-/*}*/
-
-/*img.thumbnail {*/
-    /*width: 7em ;*/
-    /*height: 7em;*/
-/*}*/
-
-/*body>main:after {*/
-    /*content: '';*/
-    /*display: block;*/
-    /*clear: both;*/
-/*}*/
 
 *{
     padding: 0;
@@ -110,64 +110,80 @@ div ul li a:hover{
 .selected a{
     color: black;
 }
-header>ul>li>a, footer {
+header>ul>li>a {
 
     color: white;
     text-align: center;
 
 }
+#logged-in-info {
+    position: absolute;
+    top: 10px;
+    right: 10px;
+    color: white;
+    background: none;
+    display: inline;
+}
 
+#logged-in-info form {
+    display: inline-block;
+    margin-right: 10px;
+}
 
 /* -------------------------------------------------------------------------- */
 /* -----| HEADER, FOOTER |--------------------------------------------------- */
 /* -------------------------------------------------------------------------- */
 
-/*body {margin: 0;}*/
 
-/*header ul, footer {*/
-    /*list-style-type: none;*/
-    /*margin: 0;*/
-    /*padding: 0;*/
-    /*overflow: hidden;*/
-    /*background-color: rgba(1, 65, 88, 0.8);*/
-    /*border-radius: 15px;*/
-/*}*/
+footer {
+    color: black;
+    list-style-type: none;
+    margin: 10px 0;
+    padding: 5px;
+    text-align:center;
+    background:none;
+    overflow: hidden;
+
+}
+
+
+
 
 /*header ul li {*/
-    /*float: left;*/
+/*float: left;*/
 /*}*/
 
 /*header>ul>li>a, footer {*/
-    /*display: block;*/
-    /*color: white;*/
-    /*text-align: center;*/
-    /*padding: 14px 16px;*/
-    /*text-decoration: none;*/
-    /*vertical-align: middle;*/
-    /*font-size: 1.2em;*/
+/*display: block;*/
+/*color: white;*/
+/*text-align: center;*/
+/*padding: 14px 16px;*/
+/*text-decoration: none;*/
+/*vertical-align: middle;*/
+/*font-size: 1.2em;*/
 
 /*}*/
 
 /*header ul li a:hover:not(.active) {*/
-    /*background-color: darkcyan;*/
-    /*border-radius: 12px;*/
+/*background-color: darkcyan;*/
+/*border-radius: 12px;*/
 /*}*/
 
 /*header ul li a:active {background-color: #4CAF50;}*/
 
 /*header ul li.right {*/
-    /*float: right;*/
-    /*color: white;*/
+/*float: right;*/
+/*color: white;*/
 /*}*/
 
 /*@media screen and (max-width: 600px){*/
-    /*header ul li.right,*/
-    /*header ul li {float: none;}*/
+/*header ul li.right,*/
+/*header ul li {float: none;}*/
 /*}*/
 
 /*li#site-logo img{*/
-    /*width: 12%;*/
-    /*height:17%;*/
+/*width: 12%;*/
+/*height:17%;*/
 /*}*/
 
 
@@ -226,40 +242,6 @@ header>ul>li>a, footer {
 /* -----| PHOTOS |------------------------------------------------------- */
 /* -------------------------------------------------------------------------- */
 
-/*a.color_box img {*/
-    /*border: 5px solid #33656C;*/
-    /*padding: 5px;*/
-    /*box-shadow: 8px 8px 10px #aaa;*/
-/*}*/
-
-/*a.color_box img:hover {*/
-    /*opacity: 1;*/
-/*}*/
-
-/*a.album img {*/
-    /*border-radius: 100%;*/
-/*}*/
-
-/*img#delete {*/
-    /*width: 15px;*/
-    /*height: 15px;*/
-    /*position: relative;*/
-    /*float: right;*/
-/*}*/
-
-
-/*.photo_container {*/
-    /*position: relative;*/
-    /*display: inline-block;*/
-/*}*/
-
-/*!*delete in top right div*!*/
-/*.delete_container {*/
-    /*position: absolute;*/
-    /*top: 16px;*/
-    /*right: 16px;*/
-/*}*/
-
 /* -------------------------------------------------------------------------- */
 /* -----| REGISTER FORM |------------------------------------------------------- */
 /* -------------------------------------------------------------------------- */
@@ -303,20 +285,20 @@ input.write_field {
 
 
 
-body>header {
-    padding: 5px;
-}
+/*body>header {*/
+    /*padding: 5px;*/
+/*}*/
 
-body>header>a>img, body>header a  {
+/*body>header>a>img, body>header a  {*/
 
-}
+/*}*/
 
-body>footer {
-    background: #eee;
-    padding: 5px;
-    margin: 10px 0;
-    text-align: center;
-}
+/*body>footer {*/
+/*background: #eee;*/
+/*padding: 5px;*/
+/*margin: 10px 0;*/
+/*text-align: center;*/
+/*}*/
 
 
 ul#messages li {
@@ -343,15 +325,15 @@ ul#messages li.error {
     color: red;
 }
 
-#logged-in-info {
-    float: right;
-    margin-top: 18px;
-}
+/*#logged-in-info {*/
+    /*float: right;*/
+    /*margin-top: 18px;*/
+/*}*/
 
-#logged-in-info form {
-    display: inline-block;
-    margin-right: 10px;
-}
+/*#logged-in-info form {*/
+    /*display: inline-block;*/
+    /*margin-right: 10px;*/
+/*}*/
 
 
 

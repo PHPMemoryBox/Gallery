@@ -26,17 +26,19 @@
         <li> <a href="<?=APP_ROOT?>/users/login">Login</a></li>
         <li> <a href="<?=APP_ROOT?>/users/register">Register</a></li>
         <?php endif; ?>
-
+</ul>
+</header>
+</div>
         <?php if ($this->isLoggedIn) : ?>
-        <li class="right">  <div id="logged-in-info">
+            <br><br><br><br><br><br><br><br><br><br><br><br>
+            <div id="logged-in-info">
              <span>Hello, <b><?=htmlspecialchars($_SESSION['name'])?></b></span>
                 <form method="post" action="<?=APP_ROOT?>/users/logout">
                     <input type="submit" value="Logout"/>
                 </form>
             </div>
-        </li>
+
         <?php endif; ?>
-    </ul>
-</header>
+
 
 <?php require_once('show-notify-messages.php'); ?>
