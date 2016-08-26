@@ -2,108 +2,173 @@
 /* -----| GENERAL |---------------------------------------------------------- */
 /* -------------------------------------------------------------------------- */
 
-* {
-    margin: 0;
+/** {*/
+    /*margin: 0;*/
+    /*padding: 0;*/
+    /*box-sizing: border-box;*/
+    /*-webkit-user-select:none;*/
+    /*-moz-user-select:none;*/
+    /*-ms-user-select:none;*/
+/*}*/
+
+/*html {*/
+    /*font-size: 100%;*/
+    /*background-image: url('images/green.jpg');*/
+    /*background-repeat: no-repeat;*/
+    /*background-attachment: fixed;*/
+/*}*/
+
+/*body {*/
+    /*font-family: Arial, Helvetica, sans-serif, Verdana;*/
+    /*font-size: 1em;*/
+    /*padding: 3% 4%;*/
+/*}*/
+
+/*#website {*/
+    /*margin: 0 auto;*/
+    /*width: 85%;*/
+    /*padding:3%;*/
+    /*border-radius: 2%;*/
+    /*background-image: url('images/yellow.jpg');*/
+    /*background-repeat: no-repeat;*/
+    /*background-attachment: fixed;*/
+
+
+/*}*/
+
+/*ul li {*/
+    /*list-style: none;*/
+    /*display: inline-block;*/
+    /*padding: 5px;*/
+/*}*/
+
+/*img.thumbnail {*/
+    /*width: 7em ;*/
+    /*height: 7em;*/
+/*}*/
+
+/*body>main:after {*/
+    /*content: '';*/
+    /*display: block;*/
+    /*clear: both;*/
+/*}*/
+
+*{
     padding: 0;
-    box-sizing: border-box;
-    -webkit-user-select:none;
-    -moz-user-select:none;
-    -ms-user-select:none;
+    margin: 0;
 }
 
 html {
     font-size: 100%;
-    background-image: url('images/green.jpg');
+    background-image: url('images/fondo9.jpg');
     background-repeat: no-repeat;
     background-attachment: fixed;
+    background-size: cover;
 }
 
-body {
-    font-family: Arial, Helvetica, sans-serif, Verdana;
-    font-size: 1em;
-    padding: 3% 4%;
-}
-
-#website {
-    margin: 0 auto;
-    width: 85%;
-    padding:3%;
-    border-radius: 2%;
-    background-image: url('images/yellow.jpg');
-    background-repeat: no-repeat;
-    background-attachment: fixed;
-
+h1{
+    font-family: Arial, sans-serif;
+    font-weight: 400;
+    height: 60px;
+    width: 100%;
+    background: #9e858e;
+    line-height: 60px;
+    color: white;
 
 }
+div{
+    width: 250px;
+    height: 666px;
+    background: url("images/sidebar-background.gif");
+    background-size: cover;
 
-ul li {
-    list-style: none;
-    display: inline-block;
-    padding: 5px;
+}
+div a{
+    text-decoration: none;
+    color: white;
+    padding:20px;
+    padding-right:100px;
 }
 
-img.thumbnail {
-    width: 7em ;
-    height: 7em;
-}
-
-body>main:after {
-    content: '';
+div ul li{
+    list-style-type: none;
     display: block;
-    clear: both;
+    padding: 15px;
+    border-bottom: 1px solid #d3f0f6;
 }
+div ul li:hover{
+    background: #d3f0f6;
+    transition: linear all 0.40s;
+    margin: 10px;
+}
+div ul li a:hover{
+    color: black;
+}
+.selected{
+    background: white;
+}
+.selected a{
+    color: black;
+}
+header>ul>li>a, footer {
+
+    color: white;
+    text-align: center;
+
+}
+
 
 /* -------------------------------------------------------------------------- */
 /* -----| HEADER, FOOTER |--------------------------------------------------- */
 /* -------------------------------------------------------------------------- */
 
-body {margin: 0;}
+/*body {margin: 0;}*/
 
-header ul, footer {
-    list-style-type: none;
-    margin: 0;
-    padding: 0;
-    overflow: hidden;
-    background-color: rgba(1, 65, 88, 0.8);
-    border-radius: 15px;
-}
+/*header ul, footer {*/
+    /*list-style-type: none;*/
+    /*margin: 0;*/
+    /*padding: 0;*/
+    /*overflow: hidden;*/
+    /*background-color: rgba(1, 65, 88, 0.8);*/
+    /*border-radius: 15px;*/
+/*}*/
 
-header ul li {
-    float: left;
-}
+/*header ul li {*/
+    /*float: left;*/
+/*}*/
 
-header>ul>li>a, footer {
-    display: block;
-    color: white;
-    text-align: center;
-    padding: 14px 16px;
-    text-decoration: none;
-    vertical-align: middle;
-    font-size: 1.2em;
+/*header>ul>li>a, footer {*/
+    /*display: block;*/
+    /*color: white;*/
+    /*text-align: center;*/
+    /*padding: 14px 16px;*/
+    /*text-decoration: none;*/
+    /*vertical-align: middle;*/
+    /*font-size: 1.2em;*/
 
-}
+/*}*/
 
-header ul li a:hover:not(.active) {
-    background-color: darkcyan;
-    border-radius: 12px;
-}
+/*header ul li a:hover:not(.active) {*/
+    /*background-color: darkcyan;*/
+    /*border-radius: 12px;*/
+/*}*/
 
-header ul li a:active {background-color: #4CAF50;}
+/*header ul li a:active {background-color: #4CAF50;}*/
 
-header ul li.right {
-    float: right;
-    color: white;
-}
+/*header ul li.right {*/
+    /*float: right;*/
+    /*color: white;*/
+/*}*/
 
-@media screen and (max-width: 600px){
-    header ul li.right,
-    header ul li {float: none;}
-}
+/*@media screen and (max-width: 600px){*/
+    /*header ul li.right,*/
+    /*header ul li {float: none;}*/
+/*}*/
 
-li#site-logo img{
-    width: 12%;
-    height:17%;
-}
+/*li#site-logo img{*/
+    /*width: 12%;*/
+    /*height:17%;*/
+/*}*/
 
 
 /* -------------------------------------------------------------------------- */
@@ -161,39 +226,39 @@ li#site-logo img{
 /* -----| PHOTOS |------------------------------------------------------- */
 /* -------------------------------------------------------------------------- */
 
-a.color_box img {
-    border: 5px solid #33656C;
-    padding: 5px;
-    box-shadow: 8px 8px 10px #aaa;
-}
+/*a.color_box img {*/
+    /*border: 5px solid #33656C;*/
+    /*padding: 5px;*/
+    /*box-shadow: 8px 8px 10px #aaa;*/
+/*}*/
 
-a.color_box img:hover {
-    opacity: 1;
-}
+/*a.color_box img:hover {*/
+    /*opacity: 1;*/
+/*}*/
 
-a.album img {
-    border-radius: 100%;
-}
+/*a.album img {*/
+    /*border-radius: 100%;*/
+/*}*/
 
-img#delete {
-    width: 15px;
-    height: 15px;
-    position: relative;
-    float: right;
-}
+/*img#delete {*/
+    /*width: 15px;*/
+    /*height: 15px;*/
+    /*position: relative;*/
+    /*float: right;*/
+/*}*/
 
 
-.photo_container {
-    position: relative;
-    display: inline-block;
-}
+/*.photo_container {*/
+    /*position: relative;*/
+    /*display: inline-block;*/
+/*}*/
 
-/*delete in top right div*/
-.delete_container {
-    position: absolute;
-    top: 16px;
-    right: 16px;
-}
+/*!*delete in top right div*!*/
+/*.delete_container {*/
+    /*position: absolute;*/
+    /*top: 16px;*/
+    /*right: 16px;*/
+/*}*/
 
 /* -------------------------------------------------------------------------- */
 /* -----| REGISTER FORM |------------------------------------------------------- */

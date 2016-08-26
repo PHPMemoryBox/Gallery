@@ -4,7 +4,7 @@
 <head>
     <link rel="stylesheet" href="<?=APP_ROOT?>/content/styles.css" />
     <link rel="stylesheet" href="<?=APP_ROOT?>/content/colorbox.css" />
-    <link rel="icon" href="<?=APP_ROOT?>/content/images/favicon.ico" />
+    <link rel="icon" href="<?=APP_ROOT?>/content/images/209457-200.png" />
     <script src="<?=APP_ROOT?>/content/scripts/jquery-3.0.0.min.js"></script>
     <script src="<?=APP_ROOT?>/content/scripts/main.js"></script>
     <script src="<?=APP_ROOT?>/content/scripts/jquery.colorbox.js"></script>
@@ -16,6 +16,7 @@
 <header>
     <ul>
 
+        <li><a href="<?=APP_ROOT?>"><img src="<?=APP_ROOT?>/content/images/photoBox.png"></a></li>
         <li><a href="<?=APP_ROOT?>/">Home</a></li>
         <?php if ($this->isLoggedIn) : ?>
         <li><a href="<?=APP_ROOT?>/album">Albums</a></li>
