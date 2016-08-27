@@ -1,8 +1,8 @@
 <?php $this->title = 'Register new user'; ?>
-
+<div  id='register'>
 <h1><?= htmlspecialchars($this->title) ?></h1>
 
-<form id='register' action='' method='post'>
+<form action='' method='post'>
     <fieldset >
 
         <legend><h3>Register and save your memories for life.</h3></legend>
@@ -26,3 +26,4 @@
 
     </fieldset>
 </form>
+</div>

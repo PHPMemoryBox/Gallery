@@ -1,5 +1,5 @@
 <?php $this->title = 'Login'; ?>
-
+<div id="login">
 <h1><?= htmlspecialchars($this->title) ?></h1>
 
 <header class="header">
@@ -12,3 +12,4 @@
     <button class="button" type="submit"><span> Log in </span></button>
 
 </form>
+</div>

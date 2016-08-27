@@ -30,7 +30,7 @@
 </header>
 </div>
         <?php if ($this->isLoggedIn) : ?>
-            <br><br><br><br><br><br><br><br><br><br><br><br>
+
             <div id="logged-in-info">
              <span>Hello, <b><?=htmlspecialchars($_SESSION['name'])?></b></span>
                 <form method="post" action="<?=APP_ROOT?>/users/logout">
