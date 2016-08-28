@@ -65,6 +65,10 @@ html {
     background-attachment: fixed;
     background-size: cover;
 }
+html>head.icon{
+    content: url("/content/images/209457-200.png");
+    visibility: visible;
+}
 
 h1{
     font-family: Arial, sans-serif;
@@ -76,10 +80,10 @@ h1{
     color: white;
 
 }
-div{
+header{
     width: 250px;
     height: 666px;
-    background: url("images/sidebar-background.gif");
+    background-color: #1A8DA9; 
     background-size: cover;
 
 }
@@ -239,11 +243,64 @@ footer {
 /* -------------------------------------------------------------------------- */
 #login{
     position: absolute;
-    top: 200px;
+    top: 100px;
     left: 850px;
     color: white;
-    background: none;
     display: inline;
+}
+
+.container{
+    width: 500px;
+    height: 400px;
+    text-align: center;
+    background-color: #1A8DA9;
+    border-radius: 6px;
+    margin: 0 auto;
+    margin-top: 150px;
+    margin-left: -140px;
+
+}
+
+.container h2 {
+    margin-top: -20px;
+}
+
+.container img{
+    width: 120px;
+    height: 120px;
+    margin-left: 78px;
+    margin-top: -37px;
+    margin-bottom: 30px;
+
+}
+
+input.write_field[type="email"],input.write_field[type="password"]{
+    height: 45px;
+    width: 300px;
+    font-size: 18px;
+    border: none;
+    margin-bottom: 20px;
+    border-radius: 4px;
+    background-color: #fff;
+    padding-left: 40px;
+}
+
+.form-input::before{
+    content: url("/views/users/icon-user-name.png");
+    position: absolute;
+    padding-left: 5px;
+    padding-top: 7px;
+    font-size: 35px;
+}
+
+.form-input:nth-child(2)::before{
+    content: url("/views/users/icon-pwd.png");
+
+}
+
+a.login{
+    color: #fff;
+    margin-left: 80px;
 }
 
 /* -------------------------------------------------------------------------- */

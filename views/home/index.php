@@ -1,4 +1,4 @@
-<?php $this->title = 'Latest Photos';
+<?php $this->title = 'Home';
 
 
 ?>
@@ -9,7 +9,6 @@
 <html lang="en">
 <head>
     <meta charset="UTF-8">
-    <title>Nav bar</title>
     <link href="/content/styles.css" rel="stylesheet" type="text/css">
 </head>
 <body>
