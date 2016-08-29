@@ -1,8 +1,8 @@
 <?php
-$this->title = 'Albums'; ?>
+$this->title = ''; ?>
 
 <!-- show albums  -->
-
+<div id="album">
 <h1><?=htmlspecialchars($this->title)?></h1>
 
 <!--upload photo-->
@@ -58,7 +58,7 @@ $this->title = 'Albums'; ?>
             <?php endforeach ?>
         </ul>
 
-        <a href="<?=APP_ROOT?>/album/create"> Create new album</a>
+
     </article>
 </main>
-
+</div>

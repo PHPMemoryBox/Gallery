@@ -1,6 +1,6 @@
 <?php
 $this->title = 'Create new album'; ?>
-
+<div id="create">
 <h1><?=htmlspecialchars($this->title)?></h1>
 
 <form method="POST" enctype="multipart/form-data">
@@ -11,3 +11,4 @@ $this->title = 'Create new album'; ?>
     <button class="button" type="submit" name="sumbit"> <span> Create </span></button>
 
 </form>
+    </div>

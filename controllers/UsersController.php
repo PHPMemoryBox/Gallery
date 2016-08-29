@@ -84,4 +84,35 @@ class UsersController extends BaseController
         $this->addInfoMessage("Logout successful");
         $this->redirect("");
     }
+
+    public function send()
+    {
+        if ($this->isPost) {
+
+            $errors=[];
+            $fields=[];
+
+            if ((isset($_POST['email']) && isset($_POST['name']))
+                && ($_POST['email'] && $_POST['name']))
+            {
+
+                $email = $_POST['email'];
+                $password = $_POST['name'];
+                $loggedUserId = $this->model->login($email, $name);
+
+                if ($loggedUserId) {
+                    $_SESSION['user_id'] = $loggedUserId['id'];
+                    $_SESSION['name'] = $loggedUserId['name'];
+
+                    return $this->redirect('home');
+                } else {
+                    $this->addErrorMessage("Wrong email or password!");
+                }
+            } else {
+                $this->addErrorMessage("Enter email and password!");
+            }
+        }
+    }
+
+
 }

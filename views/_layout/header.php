@@ -21,6 +21,7 @@
         <?php if ($this->isLoggedIn) : ?>
         <li><a href="<?=APP_ROOT?>/album">Albums</a></li>
         <li><a href="<?=APP_ROOT?>/album/create">Create Album</a></li>
+        <li><a href="<?=APP_ROOT?>/users/send">Contact Us</a></li>
 
         <?php else: ?>
         <li> <a href="<?=APP_ROOT?>/users/login">Login</a></li>

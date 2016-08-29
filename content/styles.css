@@ -10,7 +10,6 @@
     -moz-user-select:none;
     -ms-user-select:none;
 }
-
 html {
     font-size: 100%;
     background-image: url('images/header.jpg');
@@ -18,33 +17,27 @@ html {
     background-attachment: fixed;
     background-size: cover;
 }
-
 body {
     font-family: Arial, Helvetica, sans-serif, Verdana;
     font-size: 1em;
     padding: 3% 4%;
 }
-
 #website {
     margin: 0 auto;
     width: 85%;
     padding:3%;
     border-radius: 2%;
     background-color: rgba(171, 44, 209, 0.6);
-
 }
-
 ul li {
     list-style: none;
     display: inline-block;
     padding: 5px;
 }
-
 img.thumbnail {
     width: 7em ;
     height: 7em;
 }
-
 body>main:after {
     content: '';
     display: block;
@@ -80,13 +73,16 @@ h1{
     color: white;
 
 }
-header{
-    width: 250px;
-    height: 666px;
-    background-color: #1A8DA9;
-    background-size: cover;
-
+h2{
+    font-family: Arial, sans-serif;
+    font-weight: 400;
+    height: 60px;
+    width: 100%;
+    background: none;
+    line-height: 60px;
+    color: black;
 }
+
 div a{
     text-decoration: none;
     color: white;
@@ -114,31 +110,24 @@ div ul li a:hover{
 .selected a{
     color: black;
 }
+
+
+/* -------------------------------------------------------------------------- */
+/* -----| HEADER, FOOTER |--------------------------------------------------- */
+/* -------------------------------------------------------------------------- */
+header{
+    width: 250px;
+    height: 666px;
+    background-color: #1A8DA9;
+    background-size: cover;
+
+}
 header>ul>li>a {
 
     color: white;
     text-align: center;
 
 }
-#logged-in-info {
-    position: absolute;
-    top: 10px;
-    right: 10px;
-    color: white;
-    background: none;
-    display: inline;
-}
-
-#logged-in-info form {
-    display: inline-block;
-    margin-right: 10px;
-}
-
-/* -------------------------------------------------------------------------- */
-/* -----| HEADER, FOOTER |--------------------------------------------------- */
-/* -------------------------------------------------------------------------- */
-
-
 footer {
     color: black;
     list-style-type: none;
@@ -150,7 +139,9 @@ footer {
 
 }
 
-
+div.date{
+    color: black;
+}
 
 
 /*header ul li {*/
@@ -236,8 +227,6 @@ footer {
 }
 
 
-
-
 /* -------------------------------------------------------------------------- */
 /* -----| LOGIN FORM |------------------------------------------------------- */
 /* -------------------------------------------------------------------------- */
@@ -251,27 +240,25 @@ footer {
 
 .container{
     width: 500px;
-    height: 400px;
+    height: 410px;
     text-align: center;
     background-color: #1A8DA9;
     border-radius: 6px;
-    margin: 0 auto;
-    margin-top: 150px;
+    margin: -15px;
     margin-left: -140px;
 
 }
 
-.container h2 {
-    margin-top: -20px;
+#login h1 {
+    color: white;
+    margin-top: 10px;
+    margin-left: -140px;
+    padding: 5px;
 }
 
-.container img{
-    width: 120px;
-    height: 120px;
-    margin-left: 78px;
-    margin-top: -37px;
-    margin-bottom: 30px;
-
+.container h2 {
+    margin-left: -20px;
+    padding: 5px;
 }
 
 input.write_field[type="email"],input.write_field[type="password"]{
@@ -285,45 +272,139 @@ input.write_field[type="email"],input.write_field[type="password"]{
     padding-left: 40px;
 }
 
-.form-input::before{
-    content: url("/views/users/icon-user-name.png");
-    position: absolute;
-    padding-left: 5px;
-    padding-top: 7px;
-    font-size: 35px;
+img.login-user, img.login-pass{
+    margin-left: -45px;
+    margin-bottom: -10px;
 }
 
-.form-input:nth-child(2)::before{
-    content: url("/views/users/icon-pwd.png");
-
-}
-
-a.login{
+a.login {
     color: #fff;
     margin-left: 80px;
+}
+
+img.login{
+    margin-left: 0px;
+    width: 120px;
+    height: 120px;
+    margin-top: -38px;
+    margin-bottom: 30px;
+
+}
+
+#logged-in-info {
+    position: absolute;
+    top: 10px;
+    right: 10px;
+    color: white;
+    background: none;
+    display: inline;
+}
+
+#logged-in-info form {
+    display: inline-block;
+    margin-right: 10px;
 }
 
 /* -------------------------------------------------------------------------- */
 /* -----| PHOTOS |------------------------------------------------------- */
 /* -------------------------------------------------------------------------- */
+#album {
+    position: absolute;
+    width: 700px;
+    height: 70px;
+    top: 0px;
+    left: 385px;
+    color: white;
+    text-align: center;
+    background-color: #1A8DA9;
+    border-radius: 6px;
+    margin-left: -140px;
+   }
+
+#album>form.upload_photo_form{
+    font-size: 18px;
+    background: none;
+    margin-top: -50px;
+
+}
+
+#create{
+    position: absolute;
+    background-color: #1A8DA9;
+    width: 527px;
+    height: 150px;
+    border-radius: 6px;
+    text-align: left;
+    top: 100px;
+    left: 730px;
+    color: white;
+    display: inline;
+    padding: 20px;
+}
+
+
+#create>input.write_field[type="text"]{
+    height: 45px;
+    width: 300px;
+    font-size: 18px;
+    border: none;
+    margin-bottom: 20px;
+    border-radius: 4px;
+    background-color: #fff;
+    padding-left: 10px;
+}
+
+article {
+    position: absolute;
+    top: 100px;
+    left: 50px;
+    color: white;
+    display: inline;
+    text-align: left;
+    margin: 5px;
+}
+
 
 /* -------------------------------------------------------------------------- */
 /* -----| REGISTER FORM |------------------------------------------------------- */
 /* -------------------------------------------------------------------------- */
 
-#register {
+#register{
     position: absolute;
-    top: 200px;
-    left: 700px;
-    color: black;
-    background: none;
-    width: 500px;
+    top: 100px;
+    left: 850px;
+    color: white;
+    display: inline;
 }
 
-input.write_field {
-    padding:5px;
-    width: 200px;
+
+input.write_field[type="text"],input.write_field[type="email"],
+input.write_field[type="password"],input.write_field[type="confirm_password"],
+input.write_field[type="city"]{
+    margin-top: 15px;
+    margin-rigth: 0px;
+    height: 45px;
+    width: 300px;
+    font-size: 18px;
+    border: none;
+    margin-bottom: 6px;
+    border-radius: 4px;
+    background-color: #fff;
+    padding-left: 38px;
 }
+
+#register h1 {
+    color: white;
+    margin-top: 10px;
+    margin-left: -145px;
+    padding: 5px;
+}
+
+#register h3{
+    margin-top: 5px;
+}
+
+
 /* -------------------------------------------------------------------------- */
 /* -----| UPLOAD FORM |------------------------------------------------------- */
 /* -------------------------------------------------------------------------- */
@@ -343,20 +424,35 @@ input.write_field {
     font-size: 10pt;
 }
 
-.upload_photo_form {
-    padding:1%;
-    width: 40%;
-    margin: auto;
+#upload_photo {
+    position: absolute;
+    top: 10px;
+    left: 10px;
+    color: white;
+    background: none;
+    display: inline;
+}
+
+#upload_photo  form {
+    display: inline-block;
+    margin-right: 10px;
 }
 
 /* -------------------------------------------------------------------------- */
 /* -----| DEFAULT |---------------------------------------------------------- */
 /* -------------------------------------------------------------------------- */
 
+#contact{
+    position: absolute;
+    top: 100px;
+    left: 850px;
+    color: white;
+    display: inline;
+}
 
 
 /*body>header {*/
-    /*padding: 5px;*/
+/*padding: 5px;*/
 /*}*/
 
 /*body>header>a>img, body>header a  {*/
@@ -396,16 +492,11 @@ ul#messages li.error {
 }
 
 /*#logged-in-info {*/
-    /*float: right;*/
-    /*margin-top: 18px;*/
+/*float: right;*/
+/*margin-top: 18px;*/
 /*}*/
 
 /*#logged-in-info form {*/
-    /*display: inline-block;*/
-    /*margin-right: 10px;*/
+/*display: inline-block;*/
+/*margin-right: 10px;*/
 /*}*/
-
-
-
-
-
