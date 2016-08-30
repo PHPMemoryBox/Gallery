@@ -242,10 +242,12 @@ label{
     display: inline;
 }
 
+
 .container{
     width: 500px;
-    height: 410px;
+    height: 350px;
     text-align: center;
+    padding: 40px;
     background-color: #1A8DA9;
     border-radius: 6px;
     margin: -15px;
@@ -267,13 +269,13 @@ label{
 
 input.write_field[type="email"],input.write_field[type="password"]{
     height: 45px;
-    width: 300px;
+    width: 100px;
     font-size: 18px;
     border: none;
     margin-bottom: 20px;
     border-radius: 4px;
     background-color: #fff;
-    padding-left: 40px;
+    padding-left: 20px;
 }
 
 img.login-user, img.login-pass{
@@ -290,8 +292,8 @@ img.login{
     margin-left: 0px;
     width: 120px;
     height: 120px;
-    margin-top: -38px;
-    margin-bottom: 30px;
+    margin-top: -78px;
+    margin-bottom: 10px;
 
 }
 
@@ -335,11 +337,11 @@ img.login{
 #create{
     position: absolute;
     background-color: #1A8DA9;
-    width: 527px;
+    width: 550px;
     height: 150px;
     border-radius: 6px;
     text-align: left;
-    top: 100px;
+    top: 150px;
     left: 730px;
     color: white;
     display: inline;
@@ -348,6 +350,7 @@ img.login{
 
 
 #create>input.write_field[type="text"]{
+
     height: 45px;
     width: 300px;
     font-size: 18px;
@@ -368,7 +371,11 @@ article {
     margin: 5px;
 }
 
-
+div.latest_photos{
+    position: absolute;
+    top: 20px;
+    left: 270px;
+}
 /* -------------------------------------------------------------------------- */
 /* -----| REGISTER FORM |------------------------------------------------------- */
 /* -------------------------------------------------------------------------- */
@@ -416,6 +423,7 @@ input.write_field[type="city"]{
 }
 
 #register h3{
+    color: black;
     margin-bottom: 10px;
 }
 

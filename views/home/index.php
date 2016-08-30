@@ -1,11 +1,7 @@
-<?php $this->title = 'Latest Photos';
+<?php $this->title = 'Latest Photos'; ?>
 
-
-
-?>
-
-
-<h1><?=htmlspecialchars($this->title)?></h1>
+<div class="latest_photos">
+    <h1><?= htmlspecialchars($this->title) ?></h1>
 
 <ul>
     <?php foreach ($this->photos as $photo) :
