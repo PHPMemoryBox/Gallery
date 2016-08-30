@@ -143,6 +143,10 @@ div.date{
     color: black;
 }
 
+label{
+    text-align: left;
+}
+
 
 /*header ul li {*/
 /*float: left;*/
@@ -378,11 +382,21 @@ article {
 }
 
 
+#register>div.container{
+    width: 500px;
+    height: 450px;
+    text-align: center;
+    background-color: #1A8DA9;
+    border-radius: 6px;
+    margin: -15px;
+    padding: 10px;
+    margin-left: -140px;
+}
+
 input.write_field[type="text"],input.write_field[type="email"],
 input.write_field[type="password"],input.write_field[type="confirm_password"],
 input.write_field[type="city"]{
-    margin-top: 15px;
-    margin-rigth: 0px;
+    margin-top: 5px;
     height: 45px;
     width: 300px;
     font-size: 18px;
@@ -390,7 +404,8 @@ input.write_field[type="city"]{
     margin-bottom: 6px;
     border-radius: 4px;
     background-color: #fff;
-    padding-left: 38px;
+    margin-right: 8px;
+    padding-left: 167px;
 }
 
 #register h1 {
@@ -401,7 +416,7 @@ input.write_field[type="city"]{
 }
 
 #register h3{
-    margin-top: 5px;
+    margin-bottom: 10px;
 }
 
 
