@@ -16,9 +16,14 @@ class AlbumModel extends BaseModel
         return $albums;
     }
 
-    public function getAlbumById()
+    public function getAlbumById($id)
     {
-        //TODO: get single album by id
+        $statement = self::$db->prepare(
+            "SELECT * FROM album WHERE id = ?");
+        $statement->bind_param("i", $id);
+        $statement->execute();
+        $result = $statement->get_result()->fetch_assoc();
+        return $result;
     }
 
     public function create(string $name, int $user_id) : bool
@@ -112,5 +117,15 @@ class AlbumModel extends BaseModel
         $statement->execute();
         return $statement->affected_rows == 1;
     }
+
+    function search ($name) : array
+    {
+        $statement = self::$db->query(
+            "SELECT album.id, name, user_id ".
+            "FROM album WHERE name LIKE 'search%' ");
+        return $statement->fetch_all(MYSQLI_ASSOC);
+    }
+
+
 
 }
