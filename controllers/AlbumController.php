@@ -2,25 +2,20 @@
 
 class AlbumController extends BaseController
 {
-    /*This function will be executed when the class is instantiated. It is a function that initializes base data and operations,
-    which are needed for the class to function normally.*/
-    function onInit()
-    {
+    function  onInit () {
         //comes from the base controller class, and is used to authorize the client
         // as a logged in user.
         $this->authorize();
     }
 
     //listing albums
-    public function index()
-    {
+    public function index(){
         $this->albums = $this->model->getAll($_SESSION['user_id']);
 
     }
 
     //create new album
-    public function create()
-    {
+    public function create() {
         if ($this->isPost) {
             $name = $_POST['album_name'];
             if (strlen($name) < 1) {
@@ -29,7 +24,7 @@ class AlbumController extends BaseController
                 $this->addErrorMessage("Album with that name already exist!");
             } else {
                 if ($this->model->create($name, $_SESSION['user_id'])) {
-                    $this->addInfoMessage("Album " . $name . "created!");
+                    $this->addInfoMessage("Album " . $name . " created!");
                     $this->redirect('album');
                 } else {
                     $this->addErrorMessage('Cannot create album');
@@ -39,8 +34,8 @@ class AlbumController extends BaseController
         }
     }
 
-    public function deletePhoto($photoid, $albumid)
-    {
+    //delete only one photo
+    public function deletePhoto($photoid, $albumid) {
 
         $file_info = $this->model->getPhotoFileInfo($photoid);
 
@@ -56,8 +51,8 @@ class AlbumController extends BaseController
         }
     }
 
-    public function deletePhotoMultiple()
-    {
+    //delete multiple photos
+    public function deletePhotoMultiple() {
         $albumid = $_POST['albumid'];
         $photoids = $_POST['photoid'];
 
@@ -65,15 +60,14 @@ class AlbumController extends BaseController
             $this->deletePhoto($photoid, $albumid);
         }
 
-        echo json_encode($photoids);
-        exit;
+        echo json_encode($photoids); exit;
     }
 
     //delete album
-    public function delete()
-    {
+    public function delete() {
 
         $albumid = $_POST['albumid'];
+
 
 
         if ($this->isPost) {
@@ -93,8 +87,8 @@ class AlbumController extends BaseController
             }
 
         } else {
-            exit;
-            //$album = $this->model->getById($_POST['id']);
+                exit;
+           //$album = $this->model->getById($_POST['id']);
             //if (!$album) {
             //    $this->addErrorMessage('Album does not exist!');
             //    $this->redirect('album');
@@ -103,19 +97,16 @@ class AlbumController extends BaseController
 
         }
 
-        echo $albumid;
-        exit;
+        echo $albumid; exit;
     }
 
-    public function view($id)
-    {
+    public function view($id) {
         $this->albums = $this->model->AlbumPhotos($id);
 
         $this->album_id = $id;
     }
 
-    public function uploadPhoto()
-    {
+    public function uploadPhoto () {
         //var_dump($_FILES);exit;
         //upload picture file
         if (isset($_FILES['file_to_upload'])) {
@@ -139,13 +130,13 @@ class AlbumController extends BaseController
 
             // Check if $uploadOk is set to 0 by an error
             if ($uploadOk == 0) {
-                $this->addErrorMessage("Select a file.");
+               $this->addErrorMessage("Select a file.");
 
-                // if everything is ok, try to upload file
+            // if everything is ok, try to upload file
             } else {
                 $file_name = $_FILES["file_to_upload"]["name"];
 
-                $file_inserted_id = $this->model->uploadPhoto($file_name, $_SESSION['user_id'], $imageFileType);
+                $file_inserted_id = $this->model->uploadPhoto($file_name, $_SESSION['user_id'] ,$imageFileType);
 
                 $target_file = CWD . PHOTOS_PATH . $file_inserted_id . '.' . $imageFileType;
                 $thumbnail_file = CWD . THUMBNAILS_PATH . $file_inserted_id . '.' . "jpg";
@@ -153,7 +144,7 @@ class AlbumController extends BaseController
                 if (move_uploaded_file($_FILES["file_to_upload"]["tmp_name"], $target_file)) {
 
                     //create thumbnail
-                    $cmd = CWD . CONTENT . "/imagemagic/" . "convert.exe " . $target_file . " -thumbnail 300 " . $thumbnail_file;
+                    $cmd = CWD . CONTENT . "/imagemagic/" . "convert.exe " . $target_file ." -thumbnail 300 " . $thumbnail_file;
                     exec($cmd);
 
                     //add to DB
@@ -167,22 +158,24 @@ class AlbumController extends BaseController
                     $this->addInfoMessage("Error.");
                 }
             }
-        } else {
+        }else {
             $this->addInfoMessage("Sorry, there was an error uploading your file.");
         }
 
 
-        header("Location:" . $_POST['redirect']);
+       header("Location:" . $_POST['redirect']);
     }
 
-    public function search()
-    {
+    public function search() {
+
+        $this->albums = null;
         if (isset($_POST['search'])) {
-            $name = $_GET['name'];
+            if (strlen($_POST['search']) > 0) {
+                $this->albums = $this->model->search($_POST['search'], $_SESSION['user_id']);
 
-
-
+            } else {
+                $this->addErrorMessage('Search field cannot be empty.');
+            }
         }
-        }
-
+    }
 }

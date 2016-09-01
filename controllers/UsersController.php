@@ -2,33 +2,32 @@
 
 include_once('Mail.php');
 
-
 class UsersController extends BaseController
 {
     public function register()
     {
-        if ($this->isPost) {
+		if ($this->isPost) {
 
             //set variables
-            $email = $_POST['email'];
+		    $email = $_POST['email'];
             $password = $_POST['password'];
             $name = $_POST['name'];
             $city = $_POST['city'];
 
-            if ($name == '' || $email == '' || $password == '' || $_POST['confirm_password'] == '') {
+            if($name=='' || $email=='' || $password==''|| $_POST['confirm_password']=='') {
                 $this->addErrorMessage("Please fill all of the empty fields.");
-            } else if (strlen($email) < 2 || !strpos($email, '@')) {
+            } else if (strlen($email) < 2 || !strpos($email, '@')){
                 $this->addErrorMessage("Invalid email!");
-            } else if (strlen($password) < 2 || strlen($password) > 50) {
+            } else if (strlen($password) < 2 || strlen($password) > 50){
                 $this->addErrorMessage("Invalid password lenght!");
             } else if (strlen($name) > 200) {
                 $this->addErrorMessage("Invalid name length!");
-            } else if ($password != $_POST['confirm_password']) {
+            } else if ( $password != $_POST['confirm_password']) {
                 $this->addErrorMessage("Password does not match.");
             } else if ($this->model->checkIfEmailExist($email)) {
                 $this->addErrorMessage("Email already used.");
             } else if ($this->formValid()) {
-                $userId = $this->model->register($email, $password, $name, $city);
+                $userId = $this->model->register($email, $password, $name,  $city);
 
                 if ($userId) {
                     $_SESSION['email'] = $email;
@@ -39,7 +38,7 @@ class UsersController extends BaseController
 
                     //if registered send mail
                     $mail = new Gallery_Mail();
-                    $mail->send($email, "register ok", "registrira se ok");
+                    $mail->send($email, "register", "Вие се регистрирахте успешно в MemoryBox gallery");
 
                     $this->redirect('home');
                 } else {
@@ -81,9 +80,8 @@ class UsersController extends BaseController
 
     public function logout()
     {
-        session_destroy();
+		session_destroy();
         $this->addInfoMessage("Logout successful");
         $this->redirect("");
     }
-
 }

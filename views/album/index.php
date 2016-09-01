@@ -1,28 +1,31 @@
 <?php
 $this->title = ''; ?>
 
+<div class="content">
+
 <!-- show albums  -->
-<div id="album">
-<h1><?=htmlspecialchars($this->title)?></h1>
+
+<h1> <?=htmlspecialchars($this->title)?> </h1>
 
 <!--upload photo-->
-<form method="POST" action="<?=APP_ROOT?>/album/uploadPhoto" enctype="multipart/form-data" class="upload_photo_form">
-    <label for="album_name"> Upload photo</label>
-    <input class="write_field" type="file" name="file_to_upload"  accept="image/*" class="custom-file-input"/>
+    <div id="album">
+        <form method="POST" action="<?=APP_ROOT?>/album/uploadPhoto" enctype="multipart/form-data" class="upload_photo_form">
+            <label for="album_name"> Upload photo</label>
+            <input class="write_field" type="file" name="file_to_upload"  accept="image/*" class="custom-file-input"/>
 
-    <label for="album_id_option">Select album</label>
-    <select name="album_id_option">
-        <?php foreach ($this->albums as $album) :
-            $album_name = htmlspecialchars($album['name']);
-            echo "<option value ='" . $album['album_id'] . "'>" . $album_name . "</option>";
+            <label for="album_id_option">Select album</label>
+            <select name="album_id_option">
+                <?php foreach ($this->albums as $album) :
+                    $album_name = htmlspecialchars($album['name']);
+                    echo "<option value ='" . $album['album_id'] . "'>" . $album_name . "</option>";
 
-        endforeach ?>
-    </select>
+                endforeach ?>
+            </select>
 
-    <input type="hidden" name="redirect"  value="<?=APP_ROOT?>/album"/>
-    <button class="button" type="submit" name="sumbit"> <span> Upload </span></button>
-</form>
-
+            <input type="hidden" name="redirect"  value="<?=APP_ROOT?>/album"/>
+            <button class="button" type="submit" name="sumbit"> <span> Upload </span></button>
+        </form>
+    </div>
 
 
 <main id="albums">
@@ -58,7 +61,8 @@ $this->title = ''; ?>
             <?php endforeach ?>
         </ul>
 
-
+        <!--<a href="<?=APP_ROOT?>/album/create"> Create new album</a>-->
     </article>
 </main>
+
 </div>

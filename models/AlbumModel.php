@@ -16,14 +16,9 @@ class AlbumModel extends BaseModel
         return $albums;
     }
 
-    public function getAlbumById($id)
+    public function getAlbumById()
     {
-        $statement = self::$db->prepare(
-            "SELECT * FROM album WHERE id = ?");
-        $statement->bind_param("i", $id);
-        $statement->execute();
-        $result = $statement->get_result()->fetch_assoc();
-        return $result;
+        //TODO: get single album by id
     }
 
     public function create(string $name, int $user_id) : bool
@@ -118,14 +113,44 @@ class AlbumModel extends BaseModel
         return $statement->affected_rows == 1;
     }
 
-    function search ($name) : array
-    {
-        $statement = self::$db->query(
-            "SELECT album.id, name, user_id ".
-            "FROM album WHERE name LIKE 'search%' ");
-        return $statement->fetch_all(MYSQLI_ASSOC);
+    public function search($album_name, $user_id) {
+
+        //$sql = "SELECT * FROM album WHERE name LIKE '%" . $album_name . "%' and user_id LIKE '" . $user_id. "'";
+
+        //get searched album id's
+        $result = self::$db->query("SELECT * FROM album WHERE name LIKE '%" . $album_name . "%' and user_id LIKE '" . $user_id. "'");
+
+        $albums_id = [];
+        while ($album = $result->fetch_assoc()) {
+
+            $albums_id[] = $album['id'];
+        }
+
+        //get all albums
+        $statement = self::$db->query("SELECT *,album.id as album_id FROM album LEFT JOIN album_photo on album.id=album_photo.album_id "
+            . "Left JOIN photo on photo.id=album_photo.photo_id WHERE album.user_id={$user_id} GROUP BY album.id "
+            . "ORDER BY create_date DESC, photo_id DESC");
+
+        $albums = [];
+        while ($album = $statement->fetch_assoc()) {
+
+            $albums[] = $album;
+        }
+
+        //result albums
+
+        $result_albums = [];
+        foreach ($albums_id as $album_id) {
+            foreach ($albums as $album) {
+                if ($album['album_id'] == $album_id) {
+                    $result_albums[] = $album;
+                }
+            }
+
+        }
+
+        return $result_albums;
+
     }
-
-
 
 }

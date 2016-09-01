@@ -2,12 +2,16 @@
 
 <?php
 $this->title = "";
+
 ?>
+
+<div class="content"
 
 <h1><?=htmlspecialchars($this->title)?></h1>
 
 
 <!--upload photo-->
+<div class="upload_photo">
 <form method="POST" action="<?=APP_ROOT?>/album/uploadPhoto" enctype="multipart/form-data" class="upload_photo_form">
     <label for="album_name">Upload photo</label>
     <input type="file" name="file_to_upload"  accept="image/*" class="custom-file-input"/>
@@ -17,17 +21,17 @@ $this->title = "";
 
     <button class="button" type="submit" name="sumbit"> <span> Upload </span></button>
 </form>
-
+</div>
 
     <ul id="album-photos" data-albumid="<?=$this->album_id?>">
     <?php
-
+if ($this->albums != null){
     foreach ($this->albums as $photo) :
 
         $photo_name = htmlspecialchars($photo['photo_name']);
 
-        if (mb_strlen($photo['photo_name']) > 15) {
-            $photo_name = mb_substr($photo_name, 0, 15) . "..." . $photo['file_format'];
+        if (mb_strlen($photo['photo_name']) > 14) {
+            $photo_name = mb_substr($photo_name, 0, 14) . "..." . $photo['file_format'];
         }
 
         $thumbnails_file = APP_ROOT . THUMBNAILS_PATH . $photo['id'] . '.jpg';
@@ -50,3 +54,10 @@ $this->title = "";
 </ul>
 
 <button class="button" onclick="deleteMultiple()"> <span>Delete selected</span></button>
+<?php } else { ?>
+
+<p>This album is empty.</p>
+
+<?php } ?>
+
+</div>
